@@ -43,7 +43,7 @@ jobs:
                 cd ../Publish
                 echo "~~~~~~~~~~~~git clone~~~~~~~~~~~~"
                 git clone https://G-Basak:$API_TOKEN@github.com/FUNDLINE/FUNDLINE.github.io.git
-                cd FUNDLINE.github.io.git
+                cd FUNDLINE.github.io
                 echo "~~~~~~~~~~~~copy~~~~~~~~~~~~"
                 rm -f *
                 rm -rf *
