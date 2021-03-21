@@ -22,19 +22,14 @@ jobs:
             - name: Checkout code
               uses: actions/checkout@v2
 
+            #Setup node.js
             - name: Setup Node.js environment
               uses:
                   actions/setup-node@v2.1.5
-                  # Install Angulat CLI
-            - name: Install Angular CLI
-              run: sudo npm install -g @angular/cli
 
             # Build Angular Application
             - name: Build Angular Application
-              run: sudo bash $GITHUB_WORKSPACE/.github/workflows/BuildAngularApp.sh
-
-            #Deploy application to 'Github Pages'
-            - name: Deploy application
-              env:
-                  API_TOKEN: ${{ secrets.DEPLOY_TO_FUNDLINE_MASTER}}
-              run: sudo bash $GITHUB_WORKSPACE/.github/workflows/DeployApp.sh
+              run: |
+                npm install
+                npm run build -- --prod --base-href="./"
+                pwd
