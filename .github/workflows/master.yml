@@ -51,6 +51,6 @@ jobs:
                 echo "~~~~~~~~~~~~commit and push~~~~~~~~~~~~"
                 git config --local user.name "G-Basak"
                 git config --local user.email "basak.gunjan@gmail.com"
-                git add --verbose --ignore-errors -all
+                git add --verbose --ignore-errors --all
                 git commit -m "Automated Deploy"
                 git push origin head:master
