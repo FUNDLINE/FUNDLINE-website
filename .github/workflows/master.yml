@@ -53,4 +53,4 @@ jobs:
                 git config --local user.email "basak.gunjan@gmail.com"
                 git add --verbose --ignore-errors --all
                 git commit --verbose -m "Automated Deploy"
-                git push --verbose --progress --force https://G-Basak:$API_TOKEN@github.com/FUNDLINE/FUNDLINE.github.io.git refs/heads/master
+                git push https://G-Basak:$API_TOKEN@github.com/FUNDLINE/FUNDLINE.github.io.git refs/heads/master
