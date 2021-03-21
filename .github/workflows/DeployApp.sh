@@ -1,7 +1,7 @@
 cd /
 mkdir DeployApp
 cd DeployApp
-pwd | echo
+pwd
 
 echo "~~~~~~~~~~~~git clone~~~~~~~~~~~~"
 git clone https://G-Basak:$API_TOKEN@github.com/FUNDLINE/FUNDLINE.github.io.git

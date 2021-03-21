@@ -1,6 +1,6 @@
 #Change directory to workspace
 cd $GITHUB_WORKSPACE
-pwd | echo
+pwd
 
 #install all dependency
 echo "~~~~~~~~~~~~~~Install dependency~~~~~~~~~~~~~~"
