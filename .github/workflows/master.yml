@@ -36,7 +36,7 @@ jobs:
             #Publish to github pages
             - name: Publish
               env:
-                API_TOKEN : {{$secrets.DEPLOY_TO_FUNDLINE_MASTER}}
+                API_TOKEN : ${{secrets.DEPLOY_TO_FUNDLINE_MASTER}}
               run : |
                 echo "~~~~~~~~~~~~Make directory~~~~~~~~~~~~"
                 mkdir ../Publish
