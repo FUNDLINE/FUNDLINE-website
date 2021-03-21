@@ -27,7 +27,7 @@ jobs:
                   actions/setup-node@v2.1.5
                   # Install Angulat CLI
             - name: Install Angular CLI
-              run: npm install -g @angular/cli
+              run: sudo npm install -g @angular/cli
 
             # Build Angular Application
             - name: Build Angular Application
