@@ -31,10 +31,10 @@ jobs:
 
             # Build Angular Application
             - name: Build Angular Application
-              run: $GITHUB_WORKSPACE/.github/workflows/BuildAngularApp.sh
+              run: sudo $GITHUB_WORKSPACE/.github/workflows/BuildAngularApp.sh
 
             #Deploy application to 'Github Pages'
             - name: Deploy application
               env:
                   API_TOKEN: ${{ secrets.DEPLOY_TO_FUNDLINE_MASTER}}
-              run: $GITHUB_WORKSPACE/.github/workflows/DeployApp.sh
+              run: sudo $GITHUB_WORKSPACE/.github/workflows/DeployApp.sh
