@@ -60,6 +60,10 @@ jobs:
                 echo "~~~~~~~~~~~~commit and push~~~~~~~~~~~~"
                 git config --local user.name "G-Basak"
                 git config --local user.email "basak.gunjan@gmail.com"
-                git add --verbose --ignore-errors --all
-                git commit --verbose -m "Automated Deploy"
-                git push https://G-Basak:$API_TOKEN@github.com/FUNDLINE/FUNDLINE.github.io.git refs/heads/master
+                if [ $(git status --porcelain | wc -l) -eq "0" ]; then
+                    git add --verbose --ignore-errors --all
+                    git commit --verbose -m "Automated Deploy"
+                    git push https://G-Basak:$API_TOKEN@github.com/FUNDLINE/FUNDLINE.github.io.git refs/heads/master
+                else
+                    exit 0
+                fi
