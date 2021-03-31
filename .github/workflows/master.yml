@@ -58,6 +58,7 @@ jobs:
                 rm -rf *
                 cp -v -r -f ../../FUNDLINE-website/dist/FUNDLINE-website/* .
                 echo "~~~~~~~~~~~~commit and push~~~~~~~~~~~~"
+                git status
                 git config --local user.name "G-Basak"
                 git config --local user.email "basak.gunjan@gmail.com"
                 if [ $(git status --porcelain | wc -l) -eq "0" ]; then
