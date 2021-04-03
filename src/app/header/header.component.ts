@@ -1,6 +1,5 @@
 import { ScrollUtil } from './../ScrollUtil';
-import { element } from 'protractor';
-import { ChangeDetectionStrategy, Component, HostListener, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -9,11 +8,10 @@ import { ChangeDetectionStrategy, Component, HostListener, OnInit } from '@angul
 })
 export class HeaderComponent implements OnInit {
 
-  scrollPosition : number;
+  scrollPosition : number = 0;
 
   constructor() {
-    this.scrollPosition=0;
-   }
+  }
 
   ngOnInit(): void {
   }
