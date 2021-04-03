@@ -1,6 +1,5 @@
 import { ScrollUtil } from './../ScrollUtil';
-import { element } from 'protractor';
-import { ChangeDetectionStrategy, Component, HostListener, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-header',

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
+import { ScrollUtil } from 'src/app/ScrollUtil';
 
 @Component({
   selector: 'app-header-logo',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderLogoComponent implements OnInit {
 
+  scrollPosition : number = 0;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  @HostListener('window:scroll', []) onScroll(): void {
+
+    this.scrollPosition = ScrollUtil.getScrollPosition();
+    console.log(this.scrollPosition);
+
   }
 
 }
