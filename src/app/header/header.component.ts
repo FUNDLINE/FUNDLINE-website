@@ -9,11 +9,10 @@ import { ChangeDetectionStrategy, Component, HostListener, OnInit } from '@angul
 })
 export class HeaderComponent implements OnInit {
 
-  scrollPosition : number;
+  scrollPosition : number = 0;
 
   constructor() {
-    this.scrollPosition=0;
-   }
+  }
 
   ngOnInit(): void {
   }
