@@ -1,6 +1,6 @@
 import { Component, Host, HostListener, OnInit } from '@angular/core';
 import { Scroll } from '@angular/router';
-import { CommonUtil } from 'src/app/CommonUtil';
+import { CommonUtil } from 'src/Util/commonUtil';
 
 @Component({
   selector: 'app-header-logo',
