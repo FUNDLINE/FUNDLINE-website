@@ -8,7 +8,7 @@
     margin: 0px;
     border: 0px;
     padding: 0px;
-    transition-duration: 0.1s;
+    transition-duration: 50ms;
 }
 
 .positionNotTop {
