@@ -1,4 +1,4 @@
-import { ScrollUtil } from './../ScrollUtil';
+import { CommonUtil } from './../ScrollUtil';
 import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
@@ -10,6 +10,7 @@ export class HeaderComponent implements OnInit {
 
   scrollPosition : number = 0;
 
+
   constructor() {
   }
 
@@ -18,7 +19,9 @@ export class HeaderComponent implements OnInit {
 
   @HostListener('window:scroll', []) onScroll(): void {
 
-    this.scrollPosition = ScrollUtil.getScrollPosition();
+    this.scrollPosition = CommonUtil.getScrollPosition();
 
   }
+
+
 }
