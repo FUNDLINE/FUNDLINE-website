@@ -1,4 +1,4 @@
-import { CommonUtil } from 'src/app/ScrollUtil';
+import { CommonUtil } from 'src/app/CommonUtil';
 import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
