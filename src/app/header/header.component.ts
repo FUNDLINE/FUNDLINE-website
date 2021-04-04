@@ -1,3 +1,4 @@
+import { constant } from './../../Util/constant';
 import { CommonUtil } from '../../Util/commonUtil';
 import { Component, HostListener, OnInit } from '@angular/core';
 
@@ -9,7 +10,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   scrollPosition : number = 0;
-
+  boxShadow : boolean = false;
 
   constructor() {
   }
@@ -20,7 +21,7 @@ export class HeaderComponent implements OnInit {
   @HostListener('window:scroll', []) onScroll(): void {
 
     this.scrollPosition = CommonUtil.getScrollPosition();
-
+    this.boxShadow = CommonUtil.getScrollPosition()>=(CommonUtil.getHeaderMaximumHeight() - constant.minimumHeaderHeight);
   }
 
 
