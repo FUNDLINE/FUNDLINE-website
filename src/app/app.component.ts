@@ -1,4 +1,4 @@
-import { CommonUtil } from 'src/app/CommonUtil';
+import { CommonUtil } from 'src/Util/commonUtil';
 import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
