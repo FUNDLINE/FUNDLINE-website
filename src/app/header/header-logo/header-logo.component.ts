@@ -1,3 +1,4 @@
+import { constant } from './../../../Util/constant';
 import { Component, Host, HostListener, OnInit } from '@angular/core';
 import { Scroll } from '@angular/router';
 import { CommonUtil } from 'src/Util/commonUtil';
@@ -10,7 +11,6 @@ import { CommonUtil } from 'src/Util/commonUtil';
 export class HeaderLogoComponent implements OnInit {
 
   scrollPosition : number = 0;
-  //FIXME Initialize through constructor
   minimumWidth : number = 0;
   maximumWidth : number = 0;
   width : number = 0;
@@ -21,7 +21,7 @@ export class HeaderLogoComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.minimumWidth = 50;
+    this.minimumWidth = constant.minimumHeaderHeight;
     this.maximumWidth = CommonUtil.getHeaderMaximumHeight();
     this.setHeightAndWidth();
   }
