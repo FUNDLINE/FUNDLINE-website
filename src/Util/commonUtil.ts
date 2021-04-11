@@ -5,8 +5,7 @@ import { constant } from './constant';
  */
 export class CommonUtil {
 
-  private static maximumAllowedHeaderHeightOnAllDevice: number = 200;
-  private static ratio : number = CommonUtil.maximumAllowedHeaderHeightOnAllDevice/constant.viewportThresold;
+  private static ratio : number = constant.maximumAllowedHeaderHeightOnAllDevice/constant.viewportThresold;
 
   /**
    *
@@ -14,7 +13,7 @@ export class CommonUtil {
    */
   public static getHeaderMaximumHeight(): number {
     if(screen.width >= constant.viewportThresold) {
-      return CommonUtil.maximumAllowedHeaderHeightOnAllDevice;
+      return constant.maximumAllowedHeaderHeightOnAllDevice;
     } else {
         return screen.width*CommonUtil.ratio;
     }
