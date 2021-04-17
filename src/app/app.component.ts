@@ -23,7 +23,7 @@ export class AppComponent implements OnInit {
   }
 
   setMarginTop() : void {
-    this.marginTop = CommonUtil.getHeaderMaximumHeight();
+    this.marginTop = CommonUtil.getHeaderMaximumHeight()+50;
   }
 
   getMarginTop() : {[key: string] : string} {
