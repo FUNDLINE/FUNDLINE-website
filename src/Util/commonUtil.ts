@@ -12,8 +12,8 @@ export class CommonUtil {
    * @returns maximum height of header section allowed on current screen size
    */
   public static getHeaderMaximumHeight(): number {
-    if(screen.width >= constant.viewportThresold) {
-      return constant.maximumAllowedHeaderHeightOnAllDevice;
+    if(!this.isMobile()) {
+      return constant.minimumHeaderHeight;
     } else {
         return screen.width*CommonUtil.ratio;
     }
@@ -26,5 +26,10 @@ export class CommonUtil {
    */
   public static getScrollPosition() : number {
     return window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+  }
+
+
+  public static isMobile() : boolean {
+    return screen.width <= constant.viewportThresold;
   }
 }
