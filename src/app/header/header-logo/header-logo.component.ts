@@ -1,6 +1,5 @@
 import { constant } from './../../../Util/constant';
 import { Component, Host, HostListener, OnInit } from '@angular/core';
-import { Scroll } from '@angular/router';
 import { CommonUtil } from 'src/Util/commonUtil';
 
 @Component({
@@ -15,14 +14,15 @@ export class HeaderLogoComponent implements OnInit {
   maximumWidth : number = 0;
   width : number = 0;
   height : number = 0;
+  isFloatLeft : boolean = !CommonUtil.isMobile();
 
   constructor() {
 
   }
 
   ngOnInit(): void {
-    this.minimumWidth = constant.minimumHeaderHeight;
-    this.maximumWidth = CommonUtil.getHeaderMaximumHeight();
+    this.minimumWidth = constant.minimumHeaderLogoWidth;
+    this.maximumWidth = CommonUtil.getMaximumHeaderLogoWidth();
     this.setHeightAndWidth();
   }
 
@@ -49,10 +49,16 @@ export class HeaderLogoComponent implements OnInit {
   }
 
   getHeightAndWidth() : {[key:string] : string} {
-    return {
-      "height" : this.height+ "px",
-      "width" : this.width + "px"
+    if(CommonUtil.isMobile()) {
+      return {
+        "width" : this.width + "px"
+      }
+    } else {
+      return {
+        "height" : this.width + "px"
+      }
     }
+
   }
 
 }

@@ -1,8 +1,21 @@
-.header-logo {
-  margin-top: 5px;
-  margin-left: 5%;
-  margin-right: 5%;
+.outer {
+  margin-left: 4%;
+  margin-right: 5px;
+  height: fit-content;
+}
+
+.transition {
   transition: 50ms;
-  height: 200px;
-  width: 200px;
+}
+
+.floatLeft {
+  float: left;
+}
+
+.logo-margin {
+  margin: 0px;
+}
+
+.headerText {
+  display: block;
 }

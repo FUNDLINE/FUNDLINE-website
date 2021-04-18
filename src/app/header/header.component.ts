@@ -21,7 +21,7 @@ export class HeaderComponent implements OnInit {
   @HostListener('window:scroll', []) onScroll(): void {
 
     this.scrollPosition = CommonUtil.getScrollPosition();
-    this.boxShadow = (!CommonUtil.isMobile()) || CommonUtil.getScrollPosition()>=(CommonUtil.getHeaderMaximumHeight() - constant.minimumHeaderHeight);
+    this.boxShadow = (!CommonUtil.isMobile()) || CommonUtil.getScrollPosition()>=(CommonUtil.getMaximumHeaderLogoWidth() - constant.minimumHeaderLogoWidth);
   }
 
 
