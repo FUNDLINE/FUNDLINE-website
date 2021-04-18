@@ -1,7 +1,8 @@
 .header-logo {
+  margin-top: 5px;
   margin-left: 5%;
-  background-color: blue;
-  /*transition: 0.1s;*/
+  margin-right: 5%;
+  transition: 50ms;
   height: 200px;
   width: 200px;
 }

@@ -1,4 +1,4 @@
-import { CommonUtil } from 'src/app/CommonUtil';
+import { CommonUtil } from 'src/Util/commonUtil';
 import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
@@ -23,7 +23,7 @@ export class AppComponent implements OnInit {
   }
 
   setMarginTop() : void {
-    this.marginTop = CommonUtil.getHeaderMaximumHeight();
+    this.marginTop = CommonUtil.getHeaderMaximumHeight()+50;
   }
 
   getMarginTop() : {[key: string] : string} {

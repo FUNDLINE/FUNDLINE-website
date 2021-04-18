@@ -8,9 +8,9 @@
     margin: 0px;
     border: 0px;
     padding: 0px;
-    transition-duration: 0.1s;
+    transition-duration: 50ms;
 }
 
 .positionNotTop {
-  box-shadow: grey 0px 2px 10px;
+  box-shadow: black 0px 2px 10px;
 }
