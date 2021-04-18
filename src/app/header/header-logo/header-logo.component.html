@@ -1,1 +1,6 @@
-<img src="../../../assets/fundline_logo.svg" alt="fundline_logo" class="header-logo" [ngStyle]="getHeightAndWidth()" />
+<div class="outer">
+    <img src="../../../assets/fundline_logo.svg" alt="fundline_logo" class="transition logo-margin"
+      [ngStyle]="getHeightAndWidth()" [ngClass]='{floatLeft : isFloatLeft}' />
+    <img src="../../../assets/fundline-text.svg" alt="fundline_text" class="transition headerText logo-margin"
+      [ngStyle]="getHeightAndWidth()" [ngClass]='{floatLeft : isFloatLeft}'>
+</div>

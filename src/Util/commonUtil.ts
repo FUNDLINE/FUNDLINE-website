@@ -5,15 +5,15 @@ import { constant } from './constant';
  */
 export class CommonUtil {
 
-  private static ratio : number = constant.maximumAllowedHeaderHeightOnAllDevice/constant.viewportThresold;
+  private static ratio : number = constant.maximumAllowedHeaderLogoWidthOnAllDevice/constant.viewportThresold;
 
   /**
    *
    * @returns maximum height of header section allowed on current screen size
    */
-  public static getHeaderMaximumHeight(): number {
+  public static getMaximumHeaderLogoWidth(): number {
     if(!this.isMobile()) {
-      return constant.minimumHeaderHeight;
+      return constant.minimumHeaderLogoWidth;
     } else {
         return screen.width*CommonUtil.ratio;
     }
