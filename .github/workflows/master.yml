@@ -54,8 +54,8 @@ jobs:
                 git clone https://github.com/FUNDLINE/FUNDLINE.github.io.git
                 cd FUNDLINE.github.io
                 echo "~~~~~~~~~~~~copy~~~~~~~~~~~~"
-                rm -f *
-                rm -rf *
+                rm -rf -v *
+                rm -f -v *
                 cp -v -r -f ../../FUNDLINE-website/dist/FUNDLINE-website/* .
                 echo "~~~~~~~~~~~~commit and push~~~~~~~~~~~~"
                 git status
