@@ -2,13 +2,13 @@
     position: fixed;
     top: 0px;
     left: 0px;
-    background-color: green;
     height: fit-content;
     width: 100%;
     margin: 0px;
     border: 0px;
     padding: 0px;
     transition-duration: 50ms;
+    background-image: linear-gradient(to right, rgba(30, 197, 38, 1), rgba(140, 226, 123, 1));
 }
 
 .positionNotTop {
