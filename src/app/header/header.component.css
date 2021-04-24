@@ -9,8 +9,5 @@
     padding: 0px;
     transition-duration: 50ms;
     background-image: linear-gradient(to right, rgb(183, 245, 250), rgb(235, 253, 255));
-}
-
-.positionNotTop {
-  box-shadow: rgb(172, 172, 172) 0px 2px 10px;
+    box-shadow: rgb(172, 172, 172) 0px 2px 10px;
 }
