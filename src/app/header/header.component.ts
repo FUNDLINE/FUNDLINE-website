@@ -9,20 +9,12 @@ import { Component, HostListener, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  scrollPosition : number = 0;
-  boxShadow : boolean = !CommonUtil.isMobile();
-
   constructor() {
   }
 
   ngOnInit(): void {
   }
 
-  @HostListener('window:scroll', []) onScroll(): void {
-
-    this.scrollPosition = CommonUtil.getScrollPosition();
-    this.boxShadow = (!CommonUtil.isMobile()) || CommonUtil.getScrollPosition()>=(CommonUtil.getMaximumHeaderLogoWidth() - constant.minimumHeaderLogoWidth);
-  }
 
 
 }
