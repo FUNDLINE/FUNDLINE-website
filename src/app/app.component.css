@@ -60,21 +60,23 @@
 .nav-container>a {
   margin: 0;
   padding: 1.5rem;
+  border-bottom: 1px solid black;
   font-weight: 700;
   position: relative;
   z-index: 8;
-
 }
 
 .nav-container>a:hover,
 .nav-container>a:focus {
 
-  padding-left: 0.5rem;
-  border-left: 1rem solid steelblue;
+  padding-left: 1rem;
+  border-left: 0.5rem solid steelblue;
   cursor: pointer;
+  text-decoration: underline;
 }
 
 .nav-container>.nav-active {
+  border: none;
   background-color: steelblue;
   cursor: default;
   position: relative;
@@ -89,4 +91,5 @@
   padding-left: 1.5rem;
   border-left: none;
   cursor: default;
+  text-decoration: none;
 }
