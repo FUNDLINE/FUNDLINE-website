@@ -1,0 +1,90 @@
+.header-container {
+  display: flex;
+  align-items:flex-start;
+  justify-content: space-between;
+  background-color: steelblue;
+  box-shadow: 0px 0px 10px 0px black;
+  position: relative;
+  z-index: 9;
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  height: 10rem;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0.5em 0 0.5em 0;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-style: italic;
+  margin: 0 0 0 2em;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+.contact-container > P {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.body-container {
+  display: flex;
+  position: relative;
+  z-index: 8;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  background-color: lightblue;
+}
+
+.nav-container>a {
+  margin: 0;
+  padding: 1.5rem;
+  font-weight: 700;
+  position: relative;
+  z-index: 8;
+
+}
+
+.nav-container>a:hover,
+.nav-container>a:focus {
+
+  padding-left: 0.5rem;
+  border-left: 1rem solid steelblue;
+  cursor: pointer;
+}
+
+.nav-container>.nav-active {
+  background-color: steelblue;
+  cursor: default;
+  position: relative;
+  z-index: 7;
+  box-shadow: inset 0px 0px black;
+  cursor: default;
+  box-shadow: inset 0px 0px 0.5rem 0 rgba(0, 0, 0, 0.5);
+}
+
+.nav-container>.nav-active:hover,
+.nav-container>.nav-active:active {
+  padding-left: 1.5rem;
+  border-left: none;
+  cursor: default;
+}

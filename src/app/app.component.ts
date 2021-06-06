@@ -1,4 +1,3 @@
-import { CommonUtil } from 'src/Util/commonUtil';
 import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
@@ -8,28 +7,19 @@ import { Component, HostListener, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
 
-  marginTop: number = 0;
+  active: boolean[]=[];
 
   constructor() {
-
+    this.activate(0);
   }
 
   ngOnInit(): void {
-    this.setMarginTop();
+    this.activate(0);
   }
 
-  @HostListener('window:resize', []) onResize(): void {
-    this.ngOnInit();
-  }
-
-  setMarginTop() : void {
-    this.marginTop = CommonUtil.getMaximumHeaderLogoWidth()+50;
-  }
-
-  getMarginTop() : {[key: string] : string} {
-    return {
-      "margin-top" : this.marginTop+"px"
-    }
+  activate(index: number): void {
+    this.active=[false,false,false,false,false];
+    this.active[index] = true;
   }
 
 }
