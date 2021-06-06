@@ -7,11 +7,19 @@ import { Component, HostListener, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
 
-  constructor() {
+  active: boolean[]=[];
 
+  constructor() {
+    this.activate(0);
   }
 
   ngOnInit(): void {
+    this.activate(0);
+  }
+
+  activate(index: number): void {
+    this.active=[false,false,false,false,false];
+    this.active[index] = true;
   }
 
 }

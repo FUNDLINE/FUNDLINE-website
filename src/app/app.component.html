@@ -1,7 +1,7 @@
 <div class="header-container">
   <img src="../assets/fundline_logo.svg" class="logo" />
   <div class="title-container">
-    <p class="title">FUNDLINE</p>
+    <p class="title"><span style="color: red;">FUND</span><span style="color: #00ff00;">LINE</span></p>
     <p class="subtitle">Your Financial Partner</p>
   </div>
   <div class="contact-container">
@@ -14,11 +14,11 @@
 
 <div class="body-container">
   <div class="nav-container">
-    <a href="/">Home</a>
-    <a href="/">Insurance</a>
-    <a href="/">Mutual Fund</a>
-    <a href="/">Types Of Mutual Fund</a>
-    <a href="/">Advantages of Mutual Fund</a>
+    <a (click)="activate(0)" [ngClass]="{'nav-active':active[0]}">Home</a>
+    <a (click)="activate(1)" [ngClass]="{'nav-active':active[1]}">Insurance</a>
+    <a (click)="activate(2)" [ngClass]="{'nav-active':active[2]}">Mutual Fund</a>
+    <a (click)="activate(3)" [ngClass]="{'nav-active':active[3]}">Types Of Mutual Fund</a>
+    <a (click)="activate(4)" [ngClass]="{'nav-active':active[4]}">Advantages of Mutual Fund</a>
   </div>
   <div>
     <div>
