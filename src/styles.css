@@ -1,4 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -7,6 +11,7 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-html, body{
-  
+a, a:hover, a:focus, a:active, a:visited {
+  text-decoration: none;
+  color: inherit;
 }
