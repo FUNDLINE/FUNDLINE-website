@@ -29,6 +29,8 @@
 .title-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .title {
@@ -76,7 +78,7 @@
 .nav-container>a {
   margin: 0;
   padding: 1.5rem;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid steelblue;
   color: steelblue;
   font-weight: 700;
   position: relative;
@@ -90,4 +92,24 @@
   position: relative;
   z-index: 7;
   box-shadow: inset 0px 0px 0.5rem 0 rgba(0, 0, 0, 0.5);
+}
+
+.nav-container>button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:lightblue;
+  border : none;
+  border-bottom: 1px  solid steelblue;
+}
+
+.nav-container>button:active {
+  background-color: hsl(194, 51%, 66%);
+}
+
+.nav-container>button>div {
+  background-color: steelblue;
+  height: 2rem;
+  width: 2rem;
+  clip-path: polygon(50% 0, 100% 30%, 100% 100%, 50% 70%, 0 100%, 0 30%);
 }
