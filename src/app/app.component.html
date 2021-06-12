@@ -15,15 +15,17 @@
 </div>
 
 <div class="body-container">
-  <div class="nav-container">
+  <div class="nav-container" [ngClass]="{'nav-container-open':isNavOpen}">
     <a routerLink="home" routerLinkActive="nav-active">Home</a>
     <a routerLink="insurance" routerLinkActive="nav-active">Insurance</a>
     <a routerLink="mutual-fund" routerLinkActive="nav-active">Mutual Fund</a>
     <a routerLink="types-of-mutual-fund" routerLinkActive="nav-active">Types Of Mutual Fund</a>
     <a routerLink="advantages-of-mutual-fund" routerLinkActive="nav-active">Advantages of Mutual Fund</a>
-    <button><div></div></button>
   </div>
-  <div>
+  <button class="nav-button"  (click)="navOpenClose()">
+    <div class="nav-button-div" [ngClass]="{'rotate':isNavOpen}"></div>
+  </button>
+  <div style="margin-top: 1rem;">
     <router-outlet></router-outlet>
   </div>
 </div>
