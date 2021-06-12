@@ -57,6 +57,8 @@ jobs:
                 rm -rf -v *
                 rm -f -v *
                 cp -v -r -f ../../FUNDLINE-website/dist/FUNDLINE-website/* .
+                echo "~~~~~~~~~~~~setup 404 page~~~~~~~~~~~~"
+                cp index.html 404.html
                 echo "~~~~~~~~~~~~commit and push~~~~~~~~~~~~"
                 git status
                 git config --local user.name "G-Basak"
