@@ -85,7 +85,7 @@
 
 .nav-container>.nav-active {
   border: none;
-  color: darkblue;
+  color: lightblue;
   background-color: steelblue;
   position: relative;
   z-index: 7;
