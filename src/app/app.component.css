@@ -103,13 +103,13 @@
   flex-direction: column;
   position: relative;
   z-index: 8;
-  height: 100%;
 }
 
         .nav-container {
           display: flex;
           flex-direction: column;
           background-color: var(--accent-light);
+          align-self:stretch;
           height: 0;
           transform: scale(1, 0);
           transform-origin: top;
@@ -167,3 +167,40 @@
         .rotate {
           transform: rotate(-180deg);
         }
+
+        .main-body {
+          z-index: -1;
+        }
+
+
+
+
+
+
+
+
+
+@media (min-width: 800px) {
+  .header-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .contact-container {
+    margin-right: 3rem;
+  }
+
+  .body-container {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .nav-container {
+    height: auto;
+    transform: none;
+    flex: 0 0 20rem;
+  }
+
+  .nav-button {
+    display: none;
+  }
+}
