@@ -72,14 +72,21 @@
 }
 /***********End of Font Import*************/
 
+/***********Typography**********/
+body, h1, h2, h3 {
+  font-family: 'Metropolis', sans-serif;
+}
+
+p {
+  font-family: 'Inter', sans-serif;
+}
 
 
+/**********Reset*******/
 body {
   margin: 0;
   padding: 0;
   border: none;
-  background-color: #f5f5f5;
-  font-family: 'Metropolis', sans-serif;
 }
 
 a, a:hover, a:focus, a:active, a:visited {
@@ -89,4 +96,16 @@ a, a:hover, a:focus, a:active, a:visited {
 
 * {
   margin: 0;
+}
+
+h1,h2,h3 {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+
+
+
+body {
+  background-color: #f5f5f5;
 }
