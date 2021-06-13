@@ -61,6 +61,15 @@
   src: url("./assets/font/Metropolis/Metropolis-BoldItalic.woff2") format("woff2"),
        url("./assets/font/Metropolis/Metropolis-BoldItalic.woff") format("woff");
 }
+
+@font-face {
+  font-family: 'Metropolis';
+  font-style:  normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("./assets/font/Metropolis/Metropolis-Black.woff2") format("woff2"),
+       url("./assets/font/Metropolis/Metropolis-Black.woff") format("woff");
+}
 /***********End of Font Import*************/
 
 
