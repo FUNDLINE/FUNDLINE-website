@@ -161,7 +161,7 @@
 
 
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   .header-container {
     flex-direction: row;
     justify-content: space-between;
@@ -179,6 +179,7 @@
     height: auto;
     transform: none;
     flex: 0 0 20rem;
+    border-right: 1px solid var(--accent-900);
   }
 
   .nav-button {

@@ -16,11 +16,11 @@
 
 <div class="body-container">
   <div class="nav-container" [ngClass]="{'nav-container-open':isNavOpen}">
-    <a routerLink="home" routerLinkActive="nav-active">Home</a>
-    <a routerLink="insurance" routerLinkActive="nav-active">Insurance</a>
-    <a routerLink="mutual-fund" routerLinkActive="nav-active">Mutual Fund</a>
-    <a routerLink="types-of-mutual-fund" routerLinkActive="nav-active">Types Of Mutual Fund</a>
-    <a routerLink="advantages-of-mutual-fund" routerLinkActive="nav-active">Advantages of Mutual Fund</a>
+    <a (click)="navOpenClose()" routerLink="home" routerLinkActive="nav-active">Home</a>
+    <a (click)="navOpenClose()" routerLink="insurance" routerLinkActive="nav-active">Insurance</a>
+    <a (click)="navOpenClose()" routerLink="mutual-fund" routerLinkActive="nav-active">Mutual Fund</a>
+    <a (click)="navOpenClose()" routerLink="types-of-mutual-fund" routerLinkActive="nav-active">Types Of Mutual Fund</a>
+    <a (click)="navOpenClose()" routerLink="advantages-of-mutual-fund" routerLinkActive="nav-active">Advantages of Mutual Fund</a>
   </div>
   <button class="nav-button"  (click)="navOpenClose()">
     <div class="nav-button-div" [ngClass]="{'rotate':isNavOpen}"></div>
