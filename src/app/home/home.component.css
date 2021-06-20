@@ -21,7 +21,7 @@
                 }
 
                 .app-title>* {
-                    font-size: 2rem;
+                    font-size: 2.25rem;
                     font-weight: 900;
                     color: var(--accent-900);
                 }
@@ -58,6 +58,41 @@
             border-top-right-radius: 2.5rem;
             margin-top: 4rem;
         }
+
+
+.partner-container {
+    margin-top: 5rem;
+}
+
+.partner-banner {
+    display:flex;
+    justify-content: flex-start;
+}
+
+.thumb-up {
+    height: 3.25rem;
+    width: 3.25rem;
+    fill: var(--accent-900);
+}
+
+.partner-subtitle {
+    font-size: 1.5rem;
+}
+
+.partner-title {
+    font-size: 2.25rem;
+    font-weight: 900;
+}
+
+.partner-title>span {
+    color: var(--accent-900);
+}
+
+.partner-mutual-fund, .partner-insurance {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
 
 @media (min-width: 900px) {
     .app-container {
