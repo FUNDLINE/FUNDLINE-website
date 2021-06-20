@@ -1,4 +1,66 @@
-p {
-    margin: 3rem 1rem;
-    line-height: 2rem;
+@import url(../../common.css);
+
+.app-container {
+    background-color: var(--accent-100);
+    margin : 8em 0em;
+    padding-bottom: 1rem;
+}
+
+        .app-text {
+            display: flex;
+            flex-direction: column;
+            width: 15.5rem;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.75em;
+        }
+
+                .app-subtitle {
+                    font-size: 1.5rem;
+                    margin-top: 2rem;
+                }
+
+                .app-title>* {
+                    font-size: 2rem;
+                    font-weight: 900;
+                    color: var(--accent-900);
+                }
+
+                .app-feature {
+                    margin-top: 3em;
+                    margin-left: 2rem;
+                    line-height: 4rem;
+                }
+
+                        .app-feature>li {
+                            position: relative;
+                            font-size: 1rem;
+                        }
+
+                        .app-feature >li::before {
+                            content: url(../../assets/tick.svg);
+                            height: 2rem;
+                            width: 2rem;
+                            position: absolute;
+                            left: -3rem;
+                            top: 0.75rem;
+                        }
+
+        .app-img {
+            height: 20rem;
+            width: 15.5rem;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: var(--white);
+            border: 1px solid var(--accent-900);
+            border-bottom: none;
+            border-top-left-radius: 2.5rem;
+            border-top-right-radius: 2.5rem;
+            margin-top: 4rem;
+        }
+
+@media (min-width: 900px) {
+    .app-container {
+        display: flex;
+    }
 }

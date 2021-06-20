@@ -1,0 +1,36 @@
+* {
+    /*********
+      Colors
+    *********/
+    --white: rgb(255, 255, 255);
+    --black: #515151;
+  
+    --logo-green: #00ff00;
+    --logo-red : #ff0000;
+    --logo-blue: #000080;
+  
+    --light-grey: hsl(240, 0%, 95%);
+    --dark-grey:grey;
+    
+    
+    --accent-100 : #ECECF9;
+    --accent-900 : var(--logo-blue);
+  
+    /* --accent-dark : #636300;
+    --accent-light : #c7c794; */
+ 
+    
+    /***********
+      Animation
+    ************/
+    --nav-animation-duration : 300ms;
+    --nav-animation: var(--nav-animation-duration) ease-in-out;
+  
+
+    /**************
+      box-shadow
+    ***************/
+    --shadow-standard : 0px 0px 10px 0px black;
+    --shadow-light : 0px 0px 10px 0px var(--dark-grey);
+
+}
