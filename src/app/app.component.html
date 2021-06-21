@@ -15,7 +15,7 @@
 </div>
 
 <div class="body-container">
-  <div class="nav-container" [ngClass]="{'nav-container-open':isNavOpen}">
+  <div class="nav" [ngClass]="{'nav-open':isNavOpen}">
     <a (click)="navOpenClose()" routerLink="home" routerLinkActive="nav-active">Home</a>
     <a (click)="navOpenClose()" routerLink="insurance" routerLinkActive="nav-active">Insurance</a>
     <a (click)="navOpenClose()" routerLink="mutual-fund" routerLinkActive="nav-active">Mutual Fund</a>

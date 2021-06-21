@@ -76,7 +76,7 @@
   background-color: var(--white);
 }
 
-        .nav-container {
+        .nav {
           background-color: var(--accent-100);
           align-self:stretch;
           height: 0;
@@ -87,7 +87,7 @@
             height 300ms ease-in-out ;
         }
 
-                .nav-container-open {
+                .nav-open {
                   height: fit-content;
                   transform: scale(1, 1);
                   transform-origin: top;
@@ -96,7 +96,7 @@
                     height 300ms ease-in-out ;
                 }
 
-                .nav-container>a {
+                .nav>a {
                   margin: 0;
                   display:block;
                   padding: 1.5rem;
@@ -107,7 +107,7 @@
                   z-index: 8;
                 } 
 
-                .nav-container>.nav-active {
+                .nav>.nav-active {
                   border: none;
                   color: var(--accent-900);
                   background-color: var(--accent-200);
@@ -184,7 +184,7 @@
     align-items: stretch;
   }
 
-  .nav-container {
+  .nav {
     height: auto;
     transform: none;
     flex: 0 0 20rem;
