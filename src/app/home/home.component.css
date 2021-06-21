@@ -67,6 +67,7 @@
 .partner-banner {
     display:flex;
     justify-content: flex-start;
+    align-items: center;
 }
 
 .thumb-up {
@@ -77,6 +78,7 @@
 
 .partner-subtitle {
     font-size: 1.5rem;
+    color: var(--accent-900);
 }
 
 .partner-title {
