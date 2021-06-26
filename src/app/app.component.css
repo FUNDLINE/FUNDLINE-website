@@ -225,7 +225,7 @@
   }
 
   .nav-container {
-    flex: 0 0 max-content;
+    flex: 0 0 17rem;
     border-right: 1px solid var(--accent-900);
   }
 
