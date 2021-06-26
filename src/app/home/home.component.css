@@ -1,5 +1,30 @@
 @import url(../../common.css);
 
+
+.hero-container {
+  background-color: var(--accent-100);
+  padding: 0.5rem;
+}
+
+  .hero-subtitle {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .hero-title {
+    font-size: 4rem;
+    font-weight: 900;
+    color: var(--accent-900);
+    text-align: center;
+  }
+
+  .hero-text {
+    font-size: 1.25rem;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+
 .app-container {
     background-color: var(--accent-100);
     margin : 8em 0em;
