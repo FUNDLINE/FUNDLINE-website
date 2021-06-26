@@ -30,7 +30,6 @@
     /**************
       box-shadow
     ***************/
-    --shadow-standard : 0px 0px 10px 0px black;
-    --shadow-light : 0px 0px 10px 0px var(--dark-grey);
+    --shadow-standard : 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 
 }
