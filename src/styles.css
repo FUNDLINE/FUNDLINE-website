@@ -1,6 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
-@import url("./common.css");
-/*************Inter Font**************/
+
+/*************
+  Inter Font
+**************/
 @font-face {
   font-family: 'Inter';
   font-style:  normal;
@@ -27,7 +29,9 @@
        url("./assets/font/Inter/Inter-Bold.woff?v=3.18") format("woff");
 }
 
-/*************Metropolis Font**************/
+/******************
+  Metropolis Font
+******************/
 @font-face {
   font-family: 'Metropolis';
   font-style:  normal;
@@ -72,8 +76,63 @@
 }
 /***********End of Font Import*************/
 
+
+/******************
+  Global variable
+******************/
+:root {
+  /*********
+    Colors
+  *********/
+  --white: rgb(255, 255, 255);
+  --black: #515151;
+
+  --logo-green: #00ff00;
+  --logo-red : #ff0000;
+  --logo-blue: #000080;
+
+  --light-grey: hsl(240, 0%, 95%);
+  --dark-grey:grey;
+
+
+  --accent-100 : #ECECF9;
+  --accent-200 : #CFCFEA;
+  --accent-300 : #B1B1DB;
+  --accent-400 : #9494CC;
+  --accent-500 : #7676BD;
+  --accent-600 : #5959AE;
+  --accent-700 : #3B3B9F;
+  --accent-800 : #1E1E90;
+  --accent-900 : var(--logo-blue);
+
+  --accent-2-900 : #f64c72;
+
+  /* --accent-dark : #636300;
+  --accent-light : #c7c794; */
+
+
+  /***********
+    Animation
+  ************/
+  --nav-animation-duration : 300ms;
+  --nav-animation: var(--nav-animation-duration) ease-in-out;
+
+
+  /**************
+    box-shadow
+  ***************/
+  --shadow-standard : 0px 0px 10px -5px rgba(0, 0, 0, 0.5);
+
+
+  /**************
+    Line Height
+  **************/
+  --line-height-heading : 1em;
+}
+
+
 /***********Typography**********/
-body, h1, h2, h3 {
+body, h1, h2, h3, button {
   font-family: 'Metropolis', sans-serif;
 }
 
@@ -95,8 +154,9 @@ a, a:hover, a:focus, a:active, a:visited {
   color: inherit;
 }
 
-* {
+*, *::before, *::after {
   margin: 0;
+  padding: 0;
 }
 
 h1,h2,h3 {
@@ -108,4 +168,29 @@ ul, ol {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+/***********************
+  Global button styles
+***********************/
+.button-dark {
+  display: inline;
+  font-size: 1rem;
+  font-weight: 700;
+  border: 0.1em solid var(--accent-2-900);
+  border-radius: 100vh;
+  padding: 1em 1.5em;
+
+  color: var(--white);
+  background-color: var(--accent-2-900);
+
+  transition:
+    color 200ms ease-in-out,
+    background-color 200ms ease-in-out;
+}
+
+.button-dark:hover,
+.button-dark:focus {
+  color: var(--accent-2-900);
+  background-color: var(--white);
 }
