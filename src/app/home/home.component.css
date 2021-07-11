@@ -50,7 +50,7 @@
 ******/
 .app-container {
     background-color: var(--accent-100);
-    margin : 4em 0em;
+    margin : 4em 0 0 0;
     padding: 1rem 0;
 }
 
@@ -146,7 +146,7 @@
   certified by section
 ************************/
 .cert {
-  padding: 1rem 0;
+  padding: 2rem 0;
 }
 
   .cert-title {
@@ -173,8 +173,19 @@
   }
 
 
+/*************************
+  Contact/ Call to action
+**************************/
+.contact {
+  background-color: var(--accent-100);
+  text-align: center;
+  padding: 2rem 0;
+}
 
-
+.contact h1 {
+  color: var(--accent-900);
+  padding: 0 0 2rem 0;
+}
 
 
 
