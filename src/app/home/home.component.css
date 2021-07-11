@@ -1,34 +1,57 @@
-@import url(../../common.css);
-
-
 .hero-container {
   background-color: var(--accent-100);
-  padding: 0.5rem;
+  padding: 5rem 0;
 }
 
-  .hero-subtitle {
-    font-size: 2.5rem;
-    text-align: center;
-    margin-top: 2rem;
+  .hero-text-container {
+    max-width: 35rem;
   }
 
   .hero-title {
-    font-size: 4rem;
     font-weight: 900;
     color: var(--accent-900);
-    text-align: center;
+    text-align: left;
+    line-height: 1em;
   }
 
   .hero-text {
-    font-size: 1.25rem;
-    padding: 1rem;
-    margin-top: 1rem;
+    text-align: left;
+    padding: 3rem 0;
   }
 
+  .hero-button {
+    display: block;
+  }
+
+  .hero-image {
+    width: 100%;
+    max-width: 25rem;
+    height: auto;
+    padding: 3rem 0 0 0;
+  }
+
+
+
+
+
+
+/**********
+  feature
+**********/
+.feature-card {
+  width: 10rem;
+  height: 10rem;
+}
+
+
+
+/******
+  app
+******/
 .app-container {
     background-color: var(--accent-100);
-    margin : 8em 0em;
-    padding-bottom: 1rem;
+    margin : 4em 0em;
+    padding: 1rem 0;
 }
 
         .app-text {
@@ -37,18 +60,17 @@
             width: 15.5rem;
             margin-left: auto;
             margin-right: auto;
-            line-height: 1.75em;
         }
 
                 .app-subtitle {
                     font-size: 1.5rem;
-                    margin-top: 2rem;
                 }
 
-                .app-title>* {
+                .app-title {
                     font-size: 2.25rem;
                     font-weight: 900;
                     color: var(--accent-900);
+                    line-height: var(--line-height-heading);
                 }
 
                 .app-feature {
@@ -63,7 +85,7 @@
                         }
 
                         .app-feature >li::before {
-                            content: url(../../assets/tick.svg);
+                            content: url(../../assets/home/tick.svg);
                             height: 2rem;
                             width: 2rem;
                             position: absolute;
@@ -116,13 +138,75 @@
 }
 
 .partner-mutual-fund, .partner-insurance {
-    margin-top: 1rem;
-    font-size: 1.5rem;
+  margin-top: 1rem;
+  font-size: 1.5rem;
 }
+
+/***********************
+  certified by section
+************************/
+.cert {
+  padding: 1rem 0;
+}
+
+  .cert-title {
+    text-align: center;
+  }
+
+  .cert-card {
+    width: 10rem;
+    height: 15rem;
+    margin: 1rem auto;
+    text-align: center;
+  }
+
+  .cert-card>img {
+    width:10rem;
+    height: 10rem;
+    object-fit: contain;
+  }
+
+  .cert-card>p {
+    padding: 2rem 0 0 0;
+    font-size: 0.75rem;
+    color: var(--accent-900);
+  }
+
+
+
+
+
 
 
 @media (min-width: 900px) {
-    .app-container {
-        display: flex;
-    }
+
+  .hero-container>div[container=true] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hero-button{
+    margin: 1rem 0;
+  }
+
+
+  .feature-card-container {
+    display: flex;
+  }
+
+  .app-container>div[container=true] {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+  }
+
+  .cert-card-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .cert-card {
+    margin: 1rem
+  }
 }
