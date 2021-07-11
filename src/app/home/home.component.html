@@ -16,14 +16,14 @@
 
 <div class="feature">
   <div container="true">
-  <h1 class="feature-title">We offer</h1>
-  <ul class="feature-card-container">
-    <li class="card feature-card"></li>
-    <li class="card feature-card"></li>
-    <li class="card feature-card"></li>
-    <li class="card feature-card"></li>
-  </ul>
-</div>
+    <h1 class="feature-title">We offer</h1>
+    <ul class="feature-card-container">
+      <li class="card feature-card"></li>
+      <li class="card feature-card"></li>
+      <li class="card feature-card"></li>
+      <li class="card feature-card"></li>
+    </ul>
+  </div>
 </div>
 
 
@@ -49,13 +49,13 @@
   rates,
   Political Global Factors to make your portfolio.</p>
 
-  <p>Fundline offers life insurance plans that let you use your savings to generate income for your retirement or other
-    needs.
-    You can get a large life cover at a relatively low premium rate.All kind of insurance ( Life, Car, Health, Property
-    etc)
-    are available with us.</p>
+<p>Fundline offers life insurance plans that let you use your savings to generate income for your retirement or other
+  needs.
+  You can get a large life cover at a relatively low premium rate.All kind of insurance ( Life, Car, Health, Property
+  etc)
+  are available with us.</p>
 
-  <p>Fundline also provides financial planning, Retirement solution, Fixed income investment.</p>
+<p>Fundline also provides financial planning, Retirement solution, Fixed income investment.</p>
 
 
 
@@ -65,17 +65,17 @@
 
 <div class="app-container">
   <div container="true">
-  <div class="app-text">
-    <!-- <p class="app-subtitle">Do A Lot More With</p> -->
-    <h3 class="app-title">Personalized Mobile App</h3>
-    <ul class="app-feature">
-      <li>Buy,sell,switch scheme</li>
-      <li>Track and manage funds</li>
-      <li>Save time with paperless</li>
-      <li>Anytime, Anywhere</li>
-    </ul>
-  </div>
-  <div class="app-img"></div>
+    <div class="app-text">
+      <!-- <p class="app-subtitle">Do A Lot More With</p> -->
+      <h3 class="app-title">Personalized Mobile App</h3>
+      <ul class="app-feature">
+        <li>Buy,sell,switch scheme</li>
+        <li>Track and manage funds</li>
+        <li>Save time with paperless</li>
+        <li>Anytime, Anywhere</li>
+      </ul>
+    </div>
+    <div class="app-img"></div>
   </div>
 </div>
 
@@ -109,19 +109,19 @@
     <h1 class="cert-title">Certified by</h1>
     <ul class="cert-card-container">
       <li class="card cert-card" *ngFor="let cert of certList">
-        <img loading="lazy" [src]="cert.getImage()" [alt]="cert.getAltName()"/>
+        <img loading="lazy" [src]="cert.getImage()" [alt]="cert.getAltName()" />
         <p>{{cert.getName()}}</p>
       </li>
     </ul>
   </div>
 </div>
 
-<!--call to action-->
+<!--contact/ call to action-->
 <div class="contact">
-<div container="true">
-<h1>Start Financial Plannig?</h1>
-<button class="button-dark">Contact Us</button>
-</div>
+  <div container="true">
+    <h1>Start Financial Plannig?</h1>
+    <button class="button-dark" routerLink="../contact-us">Contact Us</button>
+  </div>
 </div>
 
 
