@@ -1,15 +1,13 @@
 <div class="header">
-  <div class="logo-container">
-    <svg class="logo">
-      <use href="#fundline-logo"></use>
-    </svg>
-    <div class="logo-text">
-      <h1>FUNDLINE</h1>
-      <h2>Your Financial Partner</h2>
+  <div container="true">
+    <div class="logo-container">
+      <svg class="logo">
+        <use href="#fundline-logo"></use>
+      </svg>
+      <h1 class="logo-text">FUNDLINE</h1>
     </div>
-  </div>
-  <div class="contact-us">
-    <!-- <h3>Contact Us</h3> -->
+    <!-- <div class="contact-us">
+    <h3>Contact Us</h3>
     <p><svg class="contact-email">
         <use href="#email"></use>
       </svg>abc@email.com</p>
@@ -19,30 +17,34 @@
     <p><svg class="contact-whatsapp">
         <use href="#whatsapp"></use>
       </svg>9876543210</p>
-  </div>
-</div>
+  </div> -->
 
-<div class="body-container">
-  <div class="nav-container">
-    <div class="nav" [ngClass]="{'nav-open':isNavOpen}">
-      <a (click)="navOpenClose()" routerLink="home" routerLinkActive="nav-active">Home</a>
-      <a (click)="navOpenClose()" routerLink="insurance" routerLinkActive="nav-active">Insurance</a>
-      <a (click)="navOpenClose()" routerLink="mutual-fund" routerLinkActive="nav-active">Mutual Fund</a>
-      <a (click)="navOpenClose()" routerLink="types-of-mutual-fund" routerLinkActive="nav-active">Types Of Mutual
-        Fund</a>
-      <a (click)="navOpenClose()" routerLink="advantages-of-mutual-fund" routerLinkActive="nav-active">Advantages of
-        Mutual Fund</a>
-      <a (click)="navOpenClose()" routerLink="contact-us" routerLinkActive="nav-active">Contact Us</a>
-    </div>
-    <button class="nav-button" (click)="navOpenClose()">
-      <div class="nav-button-div" [ngClass]="{'rotate':isNavOpen}"></div>
+    <button class="nav-button" (click)="navToggle()">
+      <svg><use href="#ham-burger"></use></svg>
     </button>
-  </div>
-  <div class="main-body">
-    <router-outlet></router-outlet>
+
+    <div class="nav" [ngClass]="{'nav-hide':!isNavOpen}">
+      <button class="nav-button" (click)="navToggle()">
+        <svg><use href="#cross"></use></svg>
+      </button>
+      <a (click)="navToggle()" routerLink="home" routerLinkActive="nav-active">Home</a>
+      <a (click)="navToggle()" routerLink="insurance" routerLinkActive="nav-active">Insurance</a>
+      <a (click)="navToggle()" routerLink="mutual-fund" routerLinkActive="nav-active">Mutual Fund</a>
+      <a (click)="navToggle()" routerLink="types-of-mutual-fund" routerLinkActive="nav-active">Types Of Mutual
+        Fund</a>
+      <a (click)="navToggle()" routerLink="advantages-of-mutual-fund" routerLinkActive="nav-active">Advantages of
+        Mutual Fund</a>
+      <a (click)="navToggle()" routerLink="contact-us" routerLinkActive="nav-active">Contact Us</a>
+    </div>
   </div>
 </div>
 
+
+
+
+<div class="main-body">
+  <router-outlet></router-outlet>
+</div>
 
 
 
@@ -50,7 +52,7 @@
 <!-----
   SVG
 ------>
-<svg style="display: none;">
+<svg>
   <symbol id="fundline-logo">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 529 529">
       <defs />
@@ -63,7 +65,29 @@
       </g>
     </svg>
   </symbol>
+</svg>
 
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+
+  <!--Ham Burger Icon-->
+  <symbol id="ham-burger" viewBox="0 0 100 100">
+    <rect width="84.061" height="7.406" x="7.97" y="15.721" ry="3.703" />
+    <rect width="84.061" height="7.406" x="7.97" y="46.297" ry="3.703" />
+    <rect width="84.061" height="7.406" x="7.97" y="76.874" ry="3.703" />
+  </symbol>
+
+  <!--Cross Icon-->
+  <symbol id="cross" viewBox="0 0 100 100">
+    <rect width="94.9" height="5" x="-47.4" y="68.2" ry="2.5" transform="rotate(-45)"/>
+    <rect width="94.9" height="5" x="-118.1" y="-2.5" ry="2.5" transform="rotate(-135)"/>
+  </symbol>
+</svg>
+
+
+<svg style="display: none;">
   <symbol id="email">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
       <path fill="none" d="M0 0h24v24H0z" />
@@ -87,4 +111,7 @@
         clip-rule="evenodd" />
     </svg>
   </symbol>
+
+
+
 </svg>
