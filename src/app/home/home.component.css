@@ -1,26 +1,68 @@
+/************
+  hero-area
+************/
 .hero-container {
-  background-color: var(--accent-100);
-  padding: 5rem 0;
+  background-color: #000000;
+  position: relative;
+
+}
+
+.hero-container::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background-image: url("../../assets/home/hero_īmage_main.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-container>div[container=true] {
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    position: relative;
+    z-index: 10;
 }
 
   .hero-text-container {
-    max-width: 35rem;
+    box-sizing: border-box;
+    max-width: 34rem;
+    height: 100vh;
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
   }
 
   .hero-title {
+    color: var(--white);
+    font-size: 3.5rem;
+  }
+
+  .hero-subtitle {
     font-weight: 900;
-    color: var(--accent-900);
+    color: var(--white);
     text-align: left;
     line-height: 1em;
+    padding:2rem 0;
   }
 
   .hero-text {
     text-align: left;
-    padding: 3rem 0;
+    color: var(--white);
+    padding: 2rem 0;
   }
 
   .hero-button {
     display: block;
+    width: fit-content;
   }
 
   .hero-image {
@@ -31,17 +73,50 @@
   }
 
 
+/**************
+  mutual-funds
+**************/
+.mf{
+  padding: 3rem 0;
+}
 
+.mf-title-container {
+  border-bottom: 0.5rem solid var(--accent-100);
+  padding: 0 0 2rem 0;
+}
 
+.mf-title {
+  color: var(--accent-900);
+  line-height: 1em;
+}
+
+.mf-subtitle {
+  font-size: 1.5rem;
+}
+
+.mf-logo-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(7rem, 1fr));
+  grid-auto-rows: 3rem;
+  gap: 2rem;
+  padding: 2rem 0 0 0;
+}
+
+.mf-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: left;
+}
 
 
 /**********
   feature
 **********/
-.feature-card {
+/* .feature-card {
   width: 10rem;
   height: 10rem;
-}
+} */
 
 
 
@@ -50,8 +125,7 @@
 ******/
 .app-container {
     background-color: var(--accent-100);
-    margin : 4em 0 0 0;
-    padding: 1rem 0;
+    padding: 3rem 0;
 }
 
         .app-text {
@@ -158,6 +232,7 @@
     height: 15rem;
     margin: 1rem auto;
     text-align: center;
+    padding: 1rem;
   }
 
   .cert-card>img {
@@ -191,9 +266,7 @@
 
 @media (min-width: 900px) {
 
-  .hero-container>div[container=true] {
-    display: flex;
-    justify-content: space-between;
+  .hero-text-container {
     align-items: center;
   }
 
@@ -201,10 +274,25 @@
     margin: 1rem 0;
   }
 
-
-  .feature-card-container {
-    display: flex;
+  .mf>div[container=true] {
+    display:flex;
   }
+
+  .mf-title-container {
+    border-bottom: none;
+    border-right: 0.5rem solid var(--accent-100);
+    padding: 0 2rem 0 0;
+    flex: 0 0 12rem;
+  }
+
+  .mf-logo-container {
+    padding: 0 0 0 2rem;
+    flex: 1 1 100%;
+  }
+
+  /* .feature-card-container {
+    display: flex;
+  } */
 
   .app-container>div[container=true] {
       display: flex;
