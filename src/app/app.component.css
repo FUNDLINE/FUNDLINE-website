@@ -1,6 +1,12 @@
 .header {
   background-color: var(--accent-100);
-  padding: 2rem 0;
+  padding: 0.5rem 0;
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+  box-shadow: var(--shadow-standard);
 }
 
 .header>div[container=true] {
@@ -48,7 +54,7 @@
   top: 0;
   left: 0;
   box-sizing: border-box;
-  padding: 2rem;
+  padding: 0.5rem 2rem 2rem 2rem;
   background-color: var(--white);
   transition: transform 200ms ease-in-out;
   display: flex;

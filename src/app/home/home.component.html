@@ -4,19 +4,36 @@
 <div class="hero-container">
   <div container="true">
     <div class="hero-text-container">
-      <h1 class="hero-title">Your Financial Partner</h1>
+      <h1 class="hero-title">FUNDLINE</h1>
+      <h1 class="hero-subtitle">Your Financial Partner</h1>
       <p class="hero-text">Plan for better future with our financial advisory services. We evaluate
-        various investment option & market, and guide you for optimal investment plan.</p>
+        various investment option, and guide you for optimal investment plan.</p>
       <button class="button-dark hero-button" routerLink="../contact-us">Get Started</button>
     </div>
-    <img class="hero-image" src="../../assets/home/hero-image.svg" />
 
   </div>
 </div>
 
+<!--------------
+  Mutual Fund
+--------------->
+<div class="mf">
+  <div container="true">
+    <div class="mf-title-container">
+      <h1 class="mf-title">All Mutual Funds</h1>
+      <p class="mf-subtitle">under one roof</p>
+    </div>
+      <ul class="mf-logo-container">
+        <li *ngFor="let mf of mutualFundList">
+          <img class="mf-logo" [ngStyle]="{'background-color': mf.getBgColor()}" loading="lazy" [src]="mf.getImage()" [alt]="mf.getAltName()" />
+        </li>
+      </ul>
+  </div>
+</div>
+<!--
 <div class="feature">
   <div container="true">
-    <h1 class="feature-title">We offer</h1>
+    <h1 class="feature-title">Various Investment Option</h1>
     <ul class="feature-card-container">
       <li class="card feature-card"></li>
       <li class="card feature-card"></li>
@@ -25,9 +42,9 @@
     </ul>
   </div>
 </div>
+ -->
 
-
-
+<!--
 <p>welcome to Fundline, your financial partner.</p>
 
 <p>It is an advisory service that will help you in personal financial planning to achieve your future goals.</p>
@@ -56,7 +73,7 @@
   are available with us.</p>
 
 <p>Fundline also provides financial planning, Retirement solution, Fixed income investment.</p>
-
+ -->
 
 
 <!---------------
