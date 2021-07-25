@@ -107,6 +107,7 @@
   height: 100%;
   object-fit: contain;
   object-position: left;
+  padding: 0.25rem
 }
 
 
