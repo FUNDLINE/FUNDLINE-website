@@ -23,11 +23,12 @@
       <h1 class="mf-title">All Mutual Funds</h1>
       <p class="mf-subtitle">under one roof</p>
     </div>
-      <ul class="mf-logo-container">
-        <li *ngFor="let mf of mutualFundList">
-          <img class="mf-logo" [ngStyle]="{'background-color': mf.getBgColor()}" loading="lazy" [src]="mf.getImage()" [alt]="mf.getAltName()" />
-        </li>
-      </ul>
+    <ul class="mf-logo-container">
+      <li *ngFor="let mf of mutualFundList">
+        <img class="mf-logo" [ngStyle]="{'background-color': mf.getBgColor()}" loading="lazy" [src]="mf.getImage()"
+          [alt]="mf.getAltName()" />
+      </li>
+    </ul>
   </div>
 </div>
 <!--
@@ -92,7 +93,11 @@
         <li>Anytime, Anywhere</li>
       </ul>
     </div>
-    <div class="app-img"></div>
+    <div class="app-img-container">
+      <img class="app-img" src="../../assets/home/app.jpeg" alt="mobile-app-image">
+      <div class="speaker"></div>
+      <div class="camera"></div>
+    </div>
   </div>
 </div>
 
