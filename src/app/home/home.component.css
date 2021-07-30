@@ -168,9 +168,8 @@
                             top: 0.75rem;
                         }
 
-        .app-img {
-            height: 20rem;
-            width: 15.5rem;
+        .app-img-container {
+            width: fit-content;
             margin-left: auto;
             margin-right: auto;
             background-color: var(--white);
@@ -179,6 +178,37 @@
             border-top-left-radius: 2.5rem;
             border-top-right-radius: 2.5rem;
             margin-top: 4rem;
+            padding : 3rem 1rem 0 1rem;
+            position: relative;
+        }
+
+        .app-img {
+          width: 13rem;
+          height: auto;
+          border: 1px solid var(--accent-900);
+          border-bottom: none;
+        }
+
+        .speaker {
+          border-radius: 100vh;
+          border: 1px solid var(--accent-900);
+          height: 0.5rem;
+          width: 4rem;
+          position: absolute;
+          top : 1rem;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+
+        .camera {
+          border-radius: 50%;
+          border: 1px solid var(--accent-900);
+          height: 0.5rem;
+          width: 0.5rem;
+          position: absolute;
+          top : 1rem;
+          left: 50%;
+          transform: translateX(-4rem);
         }
 
 
