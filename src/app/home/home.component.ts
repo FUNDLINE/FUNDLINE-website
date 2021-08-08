@@ -48,21 +48,19 @@ export class HomeComponent implements OnInit {
 
       Image.createImage("", "", "../../assets/home/mutual-fund-logo/Union-MF-Logo.jpg"),
       Image.createImage("", "", "../../assets/home/mutual-fund-logo/boi-mf-logo.png"),
-      Image.createImage("", "", "../../assets/home/mutual-fund-logo/quant-logo.png"),
+      Image.createImage("", "", "../../assets/home/mutual-fund-logo/bank_of_baroda_logo.png"),
 
+      Image.createImage("", "", "../../assets/home/mutual-fund-logo/quant-logo.png"),
       Image.createImageWithBgColor("", "", "../../assets/home/mutual-fund-logo/quantum-logo.png", "#0f376a"),
       Image.createImage("", "", "../../assets/home/mutual-fund-logo/principal-logo.png"),
-      Image.createImage("", "", "../../assets/home/mutual-fund-logo/bnp-paribas-logo.jpg"),
 
+      Image.createImage("", "", "../../assets/home/mutual-fund-logo/bnp-paribas-logo.jpg"),
       Image.createImage("", "", "../../assets/home/mutual-fund-logo/iti-mf-logo.png"),
       Image.createImage("", "", "../../assets/home/mutual-fund-logo/yes-mf-logo.png"),
+
       Image.createImage("", "", "../../assets/home/mutual-fund-logo/navi-logo.svg"),
-
-
-      //religare mf
       Image.createImage("", "", "../../assets/home/mutual-fund-logo/mahindra-mf-logo.jpg"),
       Image.createImage("", "", "../../assets/home/mutual-fund-logo/trust-logo.png")
-
 
     ]
   }
