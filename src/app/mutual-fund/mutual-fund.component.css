@@ -1,0 +1,35 @@
+.outer{
+  padding: 5rem 0 3rem;
+  background-color: var(--accent-100);
+}
+
+.card {
+  background-color: var(--white);
+  padding: 1rem;
+}
+
+.section {
+  padding-bottom: 3rem;
+}
+
+.section-heading {
+  color: var(--accent-900);
+}
+
+.section-text {
+}
+
+.section-text>p,
+.section-text>ol>li{
+  padding: 1rem 0;
+  line-height: 1.5rem;
+  word-spacing: normal;
+  letter-spacing: normal;
+  text-align: justify;
+}
+
+.section-text>ol {
+  list-style-type:decimal;
+  margin: auto;
+  padding: 2rem;
+}

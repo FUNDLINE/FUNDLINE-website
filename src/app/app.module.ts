@@ -28,20 +28,8 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
         component: HomeComponent,
       },
       {
-        path: 'insurance',
-        component: InsuranceComponent,
-      },
-      {
         path: 'mutual-fund',
         component: MutualFundComponent,
-      },
-      {
-        path: 'types-of-mutual-fund',
-        component: MutualFundTypeComponent,
-      },
-      {
-        path: 'advantages-of-mutual-fund',
-        component: MutualFundAdvantageComponent,
       },
       {
         path: 'contact-us',

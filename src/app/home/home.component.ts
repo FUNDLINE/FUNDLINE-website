@@ -6,10 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  certList: Image[];
-  mutualFundList: Image[];
-  insList: Image[];
-  hInsList: Image[];
+  readonly certList: Image[];
+  readonly mutualFundList: Image[];
+  readonly insList: Image[];
+  readonly hInsList: Image[];
 
   constructor() {
 
