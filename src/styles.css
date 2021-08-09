@@ -76,6 +76,39 @@
 }
 /***********End of Font Import*************/
 
+/********
+  Reset
+********/
+
+html, body {
+  margin: 0;
+  padding: 0;
+  border: none;
+  color: var(--black);
+}
+
+a, a:hover, a:focus, a:active, a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+}
+
+h1,h2,h3 {
+  font-size: 3rem;
+  font-weight: normal;
+  font-weight: 900;
+}
+
+ul, ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 
 /******************
   Global variable
@@ -136,40 +169,14 @@ body, h1, h2, h3, button {
   font-family: 'Metropolis', sans-serif;
 }
 
+h2 {
+  font-size: 2rem;
+}
+
 p, li {
   font-family: 'Inter', sans-serif;
 }
 
-
-/**********Reset*******/
-html, body {
-  margin: 0;
-  padding: 0;
-  border: none;
-  color: var(--black);
-}
-
-a, a:hover, a:focus, a:active, a:visited {
-  text-decoration: none;
-  color: inherit;
-}
-
-*, *::before, *::after {
-  margin: 0;
-  padding: 0;
-}
-
-h1,h2,h3 {
-  font-size: 3rem;
-  font-weight: normal;
-  font-weight: 900;
-}
-
-ul, ol {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
 
 /***********************
   Global button styles
