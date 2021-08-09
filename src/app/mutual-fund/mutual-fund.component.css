@@ -1,6 +1,9 @@
 .outer{
+  --bg-circle-color: #0000800C;
   padding: 5rem 0 3rem;
   background-color: var(--accent-100);
+  background-image: radial-gradient(min(40vw, 20rem) at 0% 3rem, var(--bg-circle-color)  50%, transparent 50.25%),
+                    radial-gradient(min(100vw, 40rem) at 100% 100%, var(--bg-circle-color)  50%, transparent 50.25%);
 }
 
 .card {
