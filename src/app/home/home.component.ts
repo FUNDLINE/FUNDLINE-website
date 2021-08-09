@@ -71,7 +71,7 @@ export class HomeComponent implements OnInit {
     const insLogoLoaction: string = "../../assets/home/ins-logo/";
 
     this.insList = [
-      Image.createImageWithBgColor("", "", insLogoLoaction+"bajaj-logo.webp", "#0071bb"),
+      Image.createImageWithBgColor("", "", insLogoLoaction+"bajaj-logo.png", "#0071bb"),
     ]
 
     const hInsLogoLoaction: string = "../../assets/home/health-ins-logo/";
