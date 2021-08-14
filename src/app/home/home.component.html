@@ -1,1 +1,197 @@
-<p>home works!</p>
+<!---------------
+    Hero Area
+---------------->
+<div class="hero-container">
+  <div container="true">
+    <div class="hero-text-container">
+      <h1 class="hero-title">FUNDLINE</h1>
+      <h1 class="hero-subtitle">Your Financial Partner</h1>
+      <p class="hero-text">Plan for better future with our financial advisory services. We evaluate
+        various investment option, and guide you for optimal investment plan.</p>
+      <button class="button-dark hero-button" routerLink="../contact-us">Get Started</button>
+    </div>
+
+  </div>
+</div>
+
+<!--------------
+  Mutual Fund
+--------------->
+<div class="partner">
+  <div container="true">
+    <div class="partner-title-container">
+      <h1 class="partner-title">All Mutual Funds</h1>
+      <p class="partner-subtitle">under one roof</p>
+    </div>
+    <ul class="partner-logo-container">
+      <li *ngFor="let mf of mutualFundList">
+        <img class="partner-logo" [ngStyle]="{'background-color': mf.getBgColor()}" loading="lazy" [src]="mf.getImage()"
+          [alt]="mf.getAltName()" />
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-----------
+  Insurance
+------------>
+<div class="partner">
+  <div container="true">
+    <div class="partner-title-container">
+      <h1 class="partner-title">Insurance Partner</h1>
+      <p class="partner-subtitle"></p>
+    </div>
+    <ul class="partner-logo-container">
+      <li *ngFor="let ins of insList">
+        <img class="partner-logo" [ngStyle]="{'background-color': ins.getBgColor()}" loading="lazy" [src]="ins.getImage()"
+          [alt]="ins.getAltName()" />
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!------------------
+  Health Insurance
+------------------->
+<div class="partner">
+  <div container="true">
+    <div class="partner-title-container">
+      <h1 class="partner-title">Health Insurance Partner</h1>
+      <p class="partner-subtitle"></p>
+    </div>
+    <ul class="partner-logo-container">
+      <li *ngFor="let hIns of hInsList">
+        <img class="partner-logo" [ngStyle]="{'background-color': hIns.getBgColor()}" loading="lazy" [src]="hIns.getImage()"
+          [alt]="hIns.getAltName()" />
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!--
+<div class="feature">
+  <div container="true">
+    <h1 class="feature-title">Various Investment Option</h1>
+    <ul class="feature-card-container">
+      <li class="card feature-card"></li>
+      <li class="card feature-card"></li>
+      <li class="card feature-card"></li>
+      <li class="card feature-card"></li>
+    </ul>
+  </div>
+</div>
+ -->
+
+<!--
+<p>welcome to Fundline, your financial partner.</p>
+
+<p>It is an advisory service that will help you in personal financial planning to achieve your future goals.</p>
+
+<p>Now what is financial planning? It means planning for your future financial needs by investing in return oriented
+  instruments. As an individual it will be difficult for us to evaluate various investment instruments and market
+  cycle. So financial advisory services will a play role of guideline for your personal financial planning. Personal
+  financial planning helps you to stop worrying about the secured investment for the future as we take care of the
+  rest.</p>
+<P>We are one of the best Mutual Fund advisors. It was formed with foundation stone, for creating long-term wealth for
+  the
+  investor through various financial products like Mutual Fund, Insurance, Fixed income product, Gold investment etc.
+  We
+  help you understand your financial objectives and make appropriate plans to realize them.</P>
+
+<p>At Fundline, it is our constant endeavor to construct &amp; execute personalized financial plans that aim to achieve
+  your
+  financial goals. We also consider other factors like your Age, Your risk appetite, Market conditions and interest
+  rates,
+  Political Global Factors to make your portfolio.</p>
+
+<p>Fundline offers life insurance plans that let you use your savings to generate income for your retirement or other
+  needs.
+  You can get a large life cover at a relatively low premium rate.All kind of insurance ( Life, Car, Health, Property
+  etc)
+  are available with us.</p>
+
+<p>Fundline also provides financial planning, Retirement solution, Fixed income investment.</p>
+ -->
+
+
+<!---------------
+    about app
+---------------->
+
+<div class="app-container">
+  <div container="true">
+    <div class="app-text">
+      <!-- <p class="app-subtitle">Do A Lot More With</p> -->
+      <h3 class="app-title">Personalized Mobile App</h3>
+      <ul class="app-feature">
+        <li>Buy,sell,switch scheme</li>
+        <li>Track and manage funds</li>
+        <li>Paperless transaction</li>
+        <li>Anytime, Anywhere</li>
+      </ul>
+    </div>
+    <div class="app-img-container">
+      <img class="app-img" src="../../assets/home/app.jpeg" alt="mobile-app-image">
+      <div class="speaker"></div>
+      <div class="camera"></div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-------------
+    Partner
+-------------->
+
+<!-- <div class="partner-container">
+  <div class="partner-banner">
+    <svg class="thumb-up">
+      <use href="#thumb-up"></use>
+    </svg>
+    <div class="partner-title-container">
+      <p class="partner-subtitle">We are partnered with</p>
+    </div>
+  </div>
+
+  <div class="partner-mutual-fund">Mutual Fund Partner</div>
+  <div class="partner-insurance">Insurance Partner</div>
+</div> -->
+
+
+<!------
+  Cert
+------->
+
+<div class="cert">
+  <div container="true">
+    <h1 class="cert-title">Certified by</h1>
+    <ul class="cert-card-container">
+      <li class="card cert-card" *ngFor="let cert of certList">
+        <img loading="lazy" [src]="cert.getImage()" [alt]="cert.getAltName()" />
+        <p>{{cert.getName()}}</p>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!--contact/ call to action-->
+<div class="contact">
+  <div container="true">
+    <h1>Start Financial Plannig?</h1>
+    <button class="button-dark" routerLink="../contact-us">Contact Us</button>
+  </div>
+</div>
+
+
+<!---------
+    SVG
+---------->
+<svg style="display: none;">
+  <symbol id="thumb-up">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+      <path
+        d="M2 10.5a1.5 1.5 0 113 0v6a1.5 1.5 0 01-3 0v-6zM6 10.333v5.43a2 2 0 001.106 1.79l.05.025A4 4 0 008.943 18h5.416a2 2 0 001.962-1.608l1.2-6A2 2 0 0015.56 8H12V4a2 2 0 00-2-2 1 1 0 00-1 1v.667a4 4 0 01-.8 2.4L6.8 7.933a4 4 0 00-.8 2.4z" />
+    </svg>
+  </symbol>
+</svg>

@@ -1,17 +1,225 @@
 /* You can add global styles to this file, and also import other style files */
-* {
-  margin: 0;
+
+/*************
+  Inter Font
+**************/
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./assets/font/Inter/Inter-Regular.woff2?v=3.18") format("woff2"),
+       url("./assets/font/Inter/Inter-Regular.woff?v=3.18") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./assets/font/Inter/Inter-Italic.woff2?v=3.18") format("woff2"),
+       url("./assets/font/Inter/Inter-Italic.woff?v=3.18") format("woff");
 }
 
-body {
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("./assets/font/Inter/Inter-Bold.woff2?v=3.18") format("woff2"),
+       url("./assets/font/Inter/Inter-Bold.woff?v=3.18") format("woff");
+}
+
+/******************
+  Metropolis Font
+******************/
+@font-face {
+  font-family: 'Metropolis';
+  font-style:  normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./assets/font/Metropolis/Metropolis-Regular.woff2") format("woff2"),
+       url("./assets/font/Metropolis/Metropolis-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: 'Metropolis';
+  font-style:  italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./assets/font/Metropolis/Metropolis-RegularItalic.woff") format("woff2"),
+       url("./assets/font/Metropolis/Metropolis-RegularItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Metropolis';
+  font-style:  normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("./assets/font/Metropolis/Metropolis-Bold.woff2") format("woff2"),
+       url("./assets/font/Metropolis/Metropolis-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: 'Metropolis';
+  font-style:  italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("./assets/font/Metropolis/Metropolis-BoldItalic.woff2") format("woff2"),
+       url("./assets/font/Metropolis/Metropolis-BoldItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Metropolis';
+  font-style:  normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("./assets/font/Metropolis/Metropolis-Black.woff2") format("woff2"),
+       url("./assets/font/Metropolis/Metropolis-Black.woff") format("woff");
+}
+/***********End of Font Import*************/
+
+/********
+  Reset
+********/
+
+html, body {
   margin: 0;
   padding: 0;
   border: none;
-  background-color: #f5f5f5;
-  font-family: 'Roboto', sans-serif;
+  color: var(--black);
 }
 
 a, a:hover, a:focus, a:active, a:visited {
   text-decoration: none;
   color: inherit;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+}
+
+h1,h2,h3 {
+  font-size: 3rem;
+  font-weight: normal;
+  font-weight: 900;
+}
+
+ul, ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+/******************
+  Global variable
+******************/
+:root {
+  /*********
+    Colors
+  *********/
+  --white: rgb(255, 255, 255);
+  --black: #515151;
+
+  --logo-green: #00ff00;
+  --logo-red : #ff0000;
+  --logo-blue: #000080;
+
+  --light-grey: hsl(240, 0%, 95%);
+  --dark-grey:grey;
+
+
+  --accent-100 : #ECECF9;
+  --accent-200 : #CFCFEA;
+  --accent-300 : #B1B1DB;
+  --accent-400 : #9494CC;
+  --accent-500 : #7676BD;
+  --accent-600 : #5959AE;
+  --accent-700 : #3B3B9F;
+  --accent-800 : #1E1E90;
+  --accent-900 : var(--logo-blue);
+
+  --accent-2-900 : #f64c72;
+
+  /* --accent-dark : #636300;
+  --accent-light : #c7c794; */
+
+
+  /***********
+    Animation
+  ************/
+  --nav-animation-duration : 300ms;
+  --nav-animation: var(--nav-animation-duration) ease-in-out;
+
+
+  /**************
+    box-shadow
+  ***************/
+  --shadow-standard : 0px 0px 10px -5px rgba(0, 0, 0, 0.5);
+
+
+  /**************
+    Line Height
+  **************/
+  --line-height-heading : 1em;
+}
+
+
+/***********Typography**********/
+body, h1, h2, h3, button {
+  font-family: 'Metropolis', sans-serif;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p, li {
+  font-family: 'Inter', sans-serif;
+}
+
+
+/***********************
+  Global button styles
+***********************/
+.button-dark {
+  display: inline;
+  font-size: 1.5rem;;
+  font-weight: 700;
+  border: 0.1em solid var(--accent-2-900);
+  border-radius: 100vh;
+  padding: 0.5em 1.5em;
+
+  color: var(--white);
+  background-color: var(--accent-2-900);
+
+  transition:
+    color 200ms ease-in-out,
+    background-color 200ms ease-in-out;
+}
+
+.button-dark:hover,
+.button-dark:focus {
+  color: var(--accent-2-900);
+  background-color: var(--white);
+  outline: none
+}
+
+/*****************************
+  Global container max width
+*****************************/
+div[container=true] {
+  /* outline: black solid 1px; */
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1200px;
+  margin : 0 auto;
+  padding : 0 2rem;
+}
+
+/********************
+  Global card style
+********************/
+.card {
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
 }

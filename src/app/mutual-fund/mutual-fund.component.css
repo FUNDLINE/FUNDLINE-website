@@ -1,0 +1,117 @@
+.outer{
+  --bg-circle-color: #0000800C;
+  padding: 5rem 0 3rem;
+  background-color: var(--accent-100);
+  background-image: radial-gradient(min(40vw, 20rem) at 0% 3rem, var(--bg-circle-color)  50%, transparent 50.25%),
+                    radial-gradient(min(100vw, 40rem) at 100% 100%, var(--bg-circle-color)  50%, transparent 50.25%);
+}
+
+.card {
+  background-color: var(--white);
+  padding: 1rem;
+}
+
+.section {
+  padding-bottom: 3rem;
+}
+
+.section-heading {
+  color: var(--accent-900);
+}
+
+.section-text>p,
+.section-text>ol>li{
+  padding: 1rem 0;
+  line-height: 1.5rem;
+  word-spacing: normal;
+  letter-spacing: normal;
+  text-align: justify;
+}
+
+.section-text>ol {
+  list-style-type:decimal;
+  margin: auto;
+  padding: 2rem;
+}
+
+.mf-type {
+  display: grid;
+  grid-template-columns: 2rem 14rem;
+  grid-template-rows: auto auto auto;
+}
+
+/******************
+  hierarchy arrow
+******************/
+.arrow-start,
+.arrow-mid,
+.arrow-end {
+  grid-column: 1/ span 1;
+  position: relative;
+  z-index: 1;
+}
+
+.arrow-start {
+  grid-row: 1/ span 1;
+}
+.arrow-mid {
+  grid-row: 2/ span 1;
+}
+
+.arrow-end {
+  grid-row: 3/ span 1;
+}
+
+.arrow-start::before,
+.arrow-start::after,
+.arrow-mid::before,
+.arrow-mid::after,
+.arrow-end::before,
+.arrow-end::after {
+  content: "";
+  position: absolute;
+  z-index: 9;
+  height: 50%;
+  width: 100%;
+  box-sizing: border-box;
+  --stroke: 2px solid var(--accent-900);
+  --stroke-half: 1px solid var(--accent-900);
+}
+
+.arrow-start::before,
+.arrow-mid::before,
+.arrow-end::before {
+  top: 0%;
+  /* background-color: pink; */
+  border-bottom: var(--stroke-half);
+}
+.arrow-start::after,
+.arrow-mid::after,
+.arrow-end::after {
+  top: 50%;
+  /* background-color: lightblue; */
+  border-top: var(--stroke-half);
+}
+
+.arrow-start::after,
+.arrow-mid::before,
+.arrow-mid::after,
+.arrow-end::before {
+  border-left: var(--stroke);
+}
+/******************/
+
+
+
+.type1, .type2, .type3 {
+  margin: 1rem;
+}
+
+.type-title {
+  padding-bottom: 1rem;
+  color: var(--accent-900);
+}
+
+.type-list>li {
+  line-height: 1.5rem;
+}

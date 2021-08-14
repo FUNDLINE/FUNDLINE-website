@@ -1,0 +1,342 @@
+/************
+  hero-area
+************/
+.hero-container {
+  background-color: #000000;
+  position: relative;
+
+}
+
+.hero-container::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background-image: url("../../assets/home/hero_īmage_main.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-container>div[container=true] {
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    position: relative;
+    z-index: 10;
+}
+
+  .hero-text-container {
+    box-sizing: border-box;
+    max-width: 34rem;
+    height: 100vh;
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  .hero-title {
+    color: var(--white);
+    font-size: 3.5rem;
+  }
+
+  .hero-subtitle {
+    font-weight: 900;
+    color: var(--white);
+    text-align: left;
+    line-height: 1em;
+    padding:2rem 0;
+  }
+
+  .hero-text {
+    text-align: left;
+    color: var(--white);
+    padding: 2rem 0;
+  }
+
+  .hero-button {
+    display: block;
+    width: fit-content;
+  }
+
+  .hero-image {
+    width: 100%;
+    max-width: 25rem;
+    height: auto;
+    padding: 3rem 0 0 0;
+  }
+
+
+/**************
+  mutual-funds
+**************/
+.partner{
+  padding: 3rem 0;
+}
+
+.partner-title-container {
+  border-bottom: 0.5rem solid var(--accent-100);
+  padding: 0 0 2rem 0;
+}
+
+.partner-title {
+  color: var(--accent-900);
+  line-height: 1em;
+}
+
+.partner-subtitle {
+  font-size: 1.5rem;
+}
+
+.partner-logo-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(7rem, 1fr));
+  grid-auto-rows: 3rem;
+  gap: 2rem;
+  padding: 2rem 0 0 0;
+}
+
+.partner-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: left;
+  padding: 0.25rem
+}
+
+
+/**********
+  feature
+**********/
+/* .feature-card {
+  width: 10rem;
+  height: 10rem;
+} */
+
+
+
+/******
+  app
+******/
+.app-container {
+    background-color: var(--accent-100);
+    padding: 3rem 0;
+}
+
+        .app-text {
+            display: flex;
+            flex-direction: column;
+            width: 15.5rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+                .app-subtitle {
+                    font-size: 1.5rem;
+                }
+
+                .app-title {
+                    font-size: 2.25rem;
+                    font-weight: 900;
+                    color: var(--accent-900);
+                    line-height: var(--line-height-heading);
+                }
+
+                .app-feature {
+                    margin-top: 3em;
+                    margin-left: 2rem;
+                    line-height: 4rem;
+                }
+
+                        .app-feature>li {
+                            position: relative;
+                            font-size: 1rem;
+                        }
+
+                        .app-feature >li::before {
+                            content: url(../../assets/home/tick.svg);
+                            height: 2rem;
+                            width: 2rem;
+                            position: absolute;
+                            left: -3rem;
+                            top: 0.75rem;
+                        }
+
+        .app-img-container {
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: var(--white);
+            border: 1px solid var(--accent-900);
+            border-bottom: none;
+            border-top-left-radius: 2.5rem;
+            border-top-right-radius: 2.5rem;
+            margin-top: 4rem;
+            padding : 3rem 1rem 0 1rem;
+            position: relative;
+        }
+
+        .app-img {
+          width: 13rem;
+          height: auto;
+          border: 1px solid var(--accent-900);
+          border-bottom: none;
+        }
+
+        .speaker {
+          border-radius: 100vh;
+          border: 1px solid var(--accent-900);
+          height: 0.5rem;
+          width: 4rem;
+          position: absolute;
+          top : 1rem;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+
+        .camera {
+          border-radius: 50%;
+          border: 1px solid var(--accent-900);
+          height: 0.5rem;
+          width: 0.5rem;
+          position: absolute;
+          top : 1rem;
+          left: 50%;
+          transform: translateX(-4rem);
+        }
+
+
+.partner-container {
+    margin-top: 5rem;
+}
+
+.partner-banner {
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.thumb-up {
+    height: 3.25rem;
+    width: 3.25rem;
+    fill: var(--accent-900);
+}
+
+.partner-subtitle {
+    font-size: 1.5rem;
+    color: var(--accent-900);
+}
+
+.partner-title {
+    font-size: 2.25rem;
+    font-weight: 900;
+}
+
+.partner-title>span {
+    color: var(--accent-900);
+}
+
+.partner-mutual-fund, .partner-insurance {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+/***********************
+  certified by section
+************************/
+.cert {
+  padding: 2rem 0;
+}
+
+  .cert-title {
+    text-align: center;
+  }
+
+  .cert-card {
+    width: 10rem;
+    height: 15rem;
+    margin: 1rem auto;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .cert-card>img {
+    width:10rem;
+    height: 10rem;
+    object-fit: contain;
+  }
+
+  .cert-card>p {
+    padding: 2rem 0 0 0;
+    font-size: 0.75rem;
+    color: var(--accent-900);
+  }
+
+
+/*************************
+  Contact/ Call to action
+**************************/
+.contact {
+  background-color: var(--accent-100);
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.contact h1 {
+  color: var(--accent-900);
+  padding: 0 0 2rem 0;
+}
+
+
+
+@media (min-width: 900px) {
+
+  .hero-text-container {
+    align-items: center;
+  }
+
+  .hero-button{
+    margin: 1rem 0;
+  }
+
+  .partner>div[container=true] {
+    display:flex;
+  }
+
+  .partner-title-container {
+    border-bottom: none;
+    border-right: 0.5rem solid var(--accent-100);
+    padding: 0 2rem 0 0;
+    flex: 0 0 12rem;
+  }
+
+  .partner-logo-container {
+    padding: 0 0 0 2rem;
+    flex: 1 1 100%;
+  }
+
+  /* .feature-card-container {
+    display: flex;
+  } */
+
+  .app-container>div[container=true] {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+  }
+
+  .cert-card-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .cert-card {
+    margin: 1rem
+  }
+}

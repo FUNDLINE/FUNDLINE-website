@@ -8,6 +8,7 @@ import { MutualFundComponent } from './mutual-fund/mutual-fund.component';
 import { MutualFundTypeComponent } from './mutual-fund-type/mutual-fund-type.component';
 import { MutualFundAdvantageComponent } from './mutual-fund-advantage/mutual-fund-advantage.component';
 import { RouterModule } from '@angular/router';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { RouterModule } from '@angular/router';
     InsuranceComponent,
     MutualFundComponent,
     MutualFundTypeComponent,
-    MutualFundAdvantageComponent
+    MutualFundAdvantageComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
@@ -26,20 +28,12 @@ import { RouterModule } from '@angular/router';
         component: HomeComponent,
       },
       {
-        path: 'insurance',
-        component: InsuranceComponent,
-      },
-      {
         path: 'mutual-fund',
         component: MutualFundComponent,
       },
       {
-        path: 'types-of-mutual-fund',
-        component: MutualFundTypeComponent,
-      },
-      {
-        path: 'advantages-of-mutual-fund',
-        component: MutualFundAdvantageComponent,
+        path: 'contact-us',
+        component: ContactUsComponent,
       },
       {
         path: '**',
