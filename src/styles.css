@@ -97,12 +97,6 @@ a, a:hover, a:focus, a:active, a:visited {
   padding: 0;
 }
 
-h1,h2,h3 {
-  font-size: 3rem;
-  font-weight: normal;
-  font-weight: 900;
-}
-
 ul, ol {
   list-style-type: none;
   margin: 0;
@@ -129,13 +123,13 @@ ul, ol {
 
 
   --accent-100 : #ECECF9;
-  --accent-200 : #CFCFEA;
+  /* --accent-200 : #CFCFEA;
   --accent-300 : #B1B1DB;
   --accent-400 : #9494CC;
   --accent-500 : #7676BD;
   --accent-600 : #5959AE;
   --accent-700 : #3B3B9F;
-  --accent-800 : #1E1E90;
+  --accent-800 : #1E1E90; */
   --accent-900 : var(--logo-blue);
 
   --accent-2-900 : #f64c72;
@@ -169,8 +163,21 @@ body, h1, h2, h3, button {
   font-family: 'Metropolis', sans-serif;
 }
 
+h1,h2,h3 {
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
 h2 {
   font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 p, li {
