@@ -5,8 +5,6 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { InsuranceComponent } from './insurance/insurance.component';
 import { MutualFundComponent } from './mutual-fund/mutual-fund.component';
-import { MutualFundTypeComponent } from './mutual-fund-type/mutual-fund-type.component';
-import { MutualFundAdvantageComponent } from './mutual-fund-advantage/mutual-fund-advantage.component';
 import { RouterModule } from '@angular/router';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 
@@ -16,8 +14,6 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     HomeComponent,
     InsuranceComponent,
     MutualFundComponent,
-    MutualFundTypeComponent,
-    MutualFundAdvantageComponent,
     ContactUsComponent
   ],
   imports: [
@@ -34,6 +30,10 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
       {
         path: 'contact-us',
         component: ContactUsComponent,
+      },
+      {
+        path: 'insurance',
+        component: InsuranceComponent,
       },
       {
         path: '**',
