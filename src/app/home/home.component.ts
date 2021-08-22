@@ -64,7 +64,8 @@ export class HomeComponent implements OnInit {
 
       Image.createImage("", "", mfLogoLoaction+"navi-logo.svg"),
       Image.createImage("", "", mfLogoLoaction+"mahindra-mf-logo.jpg"),
-      Image.createImage("", "", mfLogoLoaction+"trust-logo.png")
+      Image.createImage("", "", mfLogoLoaction+"trust-logo.png"),
+      Image.createImage("", "", mfLogoLoaction+"samco-logo.png")
 
     ];
 
