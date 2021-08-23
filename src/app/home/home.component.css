@@ -99,6 +99,13 @@
   justify-content: flex-start;
   align-items: center;
   border-left: var(--border);
+
+  transform-origin: center;
+  transition: transform var(--animation-duration) ease-in-out;
+}
+
+.feature-card:hover {
+  transform: scale(1.05, 1.05);
 }
 
 .feature-title {
