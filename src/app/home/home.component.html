@@ -132,7 +132,7 @@
       </div>
       <ul class="partner-logo-container">
         <li *ngFor="let mf of mutualFundList">
-          <img class="partner-logo" [ngStyle]="{'background-color': mf.getBgColor()}" loading="lazy"
+          <img class="card partner-logo" [ngStyle]="{'background-color': mf.getBgColor()}" loading="lazy"
             [src]="mf.getImage()" [alt]="mf.getAltName()" />
         </li>
       </ul>
@@ -147,7 +147,7 @@
       </div>
       <ul class="partner-logo-container">
         <li *ngFor="let ins of insList">
-          <img class="partner-logo" [ngStyle]="{'background-color': ins.getBgColor()}" loading="lazy"
+          <img class="card partner-logo" [ngStyle]="{'background-color': ins.getBgColor()}" loading="lazy"
             [src]="ins.getImage()" [alt]="ins.getAltName()" />
         </li>
       </ul>
@@ -162,7 +162,7 @@
       </div>
       <ul class="partner-logo-container">
         <li *ngFor="let hIns of hInsList">
-          <img class="partner-logo" [ngStyle]="{'background-color': hIns.getBgColor()}" loading="lazy"
+          <img class="card partner-logo" [ngStyle]="{'background-color': hIns.getBgColor()}" loading="lazy"
             [src]="hIns.getImage()" [alt]="hIns.getAltName()" />
         </li>
       </ul>
