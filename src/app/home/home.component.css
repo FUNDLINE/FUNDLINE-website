@@ -140,10 +140,6 @@
   line-height: 1em;
 }
 
-.partner-subtitle {
-  font-size: 1.5rem;
-}
-
 .partner-logo-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(7rem, 1fr));
@@ -325,7 +321,7 @@
   /**********
     partner
   **********/
-  .partner>div[container=true] {
+  .partner {
     display:flex;
   }
 
