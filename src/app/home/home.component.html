@@ -167,6 +167,22 @@
         </li>
       </ul>
     </div>
+
+    <!------------------
+      Health Insurance
+    ------------------->
+    <div class="partner">
+      <div class="partner-title-container">
+        <h2 class="partner-title">NPS Partner</h2>
+      </div>
+      <ul class="partner-logo-container">
+        <li *ngFor="let nps of npsList">
+          <img class="card partner-logo" [ngStyle]="{'background-color': nps.getBgColor()}" loading="lazy"
+            [src]="nps.getImage()" [alt]="nps.getAltName()" />
+        </li>
+      </ul>
+    </div>
+
   </div>
 </div>
 <!--
