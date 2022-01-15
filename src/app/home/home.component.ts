@@ -10,6 +10,7 @@ export class HomeComponent implements OnInit {
   readonly mutualFundList: Image[];
   readonly insList: Image[];
   readonly hInsList: Image[];
+  readonly npsList: Image[];
 
   constructor() {
 
@@ -78,6 +79,11 @@ export class HomeComponent implements OnInit {
     const hInsLogoLoaction: string = "../../assets/home/health-ins-logo/";
     this.hInsList = [
       Image.createImage("", "", hInsLogoLoaction+"start-health-ins-logo.png"),
+    ];
+
+    const npsLogoLoaction: string = "../../assets/home/nps-logo/";
+    this.npsList = [
+      Image.createImage("", "", npsLogoLoaction+"icici-prud-logo.png"),
     ];
   }
 
