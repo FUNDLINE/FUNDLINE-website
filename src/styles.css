@@ -97,16 +97,14 @@ a, a:hover, a:focus, a:active, a:visited {
   padding: 0;
 }
 
-h1,h2,h3 {
-  font-size: 3rem;
-  font-weight: normal;
-  font-weight: 900;
-}
-
 ul, ol {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+button {
+  border: 0;
 }
 
 
@@ -128,17 +126,18 @@ ul, ol {
   --dark-grey:grey;
 
 
-  --accent-100 : #ECECF9;
-  --accent-200 : #CFCFEA;
+  --accent-100 : #e7e7f7;
+  /* --accent-200 : #CFCFEA;
   --accent-300 : #B1B1DB;
   --accent-400 : #9494CC;
   --accent-500 : #7676BD;
   --accent-600 : #5959AE;
   --accent-700 : #3B3B9F;
-  --accent-800 : #1E1E90;
+  --accent-800 : #1E1E90; */
   --accent-900 : var(--logo-blue);
 
-  --accent-2-900 : #f64c72;
+  --accent-secondary-900 : #f64c72;
+  --accent-secondary-950 : #e4365b;
 
   /* --accent-dark : #636300;
   --accent-light : #c7c794; */
@@ -149,6 +148,8 @@ ul, ol {
   ************/
   --nav-animation-duration : 300ms;
   --nav-animation: var(--nav-animation-duration) ease-in-out;
+
+  --animation-duration: 200ms;
 
 
   /**************
@@ -169,8 +170,21 @@ body, h1, h2, h3, button {
   font-family: 'Metropolis', sans-serif;
 }
 
+h1,h2,h3 {
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
 h2 {
   font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 p, li {
@@ -185,22 +199,23 @@ p, li {
   display: inline;
   font-size: 1.5rem;;
   font-weight: 700;
-  border: 0.1em solid var(--accent-2-900);
   border-radius: 100vh;
   padding: 0.5em 1.5em;
 
   color: var(--white);
-  background-color: var(--accent-2-900);
+  background-color: var(--accent-secondary-900);
+  background-image: linear-gradient(to bottom, #ffffff20, #00000020);
+  box-shadow:  0px 0px 4px 0px rgba(0, 0, 0, 0.2);
 
   transition:
-    color 200ms ease-in-out,
-    background-color 200ms ease-in-out;
+    color var(--animation-duration) ease-in-out,
+    background-color var(--animation-duration) ease-in-out,
+    border-color var(--animation-duration) ease-in-out;
 }
 
 .button-dark:hover,
 .button-dark:focus {
-  color: var(--accent-2-900);
-  background-color: var(--white);
+  background-color: var(--accent-secondary-950);
   outline: none
 }
 

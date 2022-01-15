@@ -10,78 +10,165 @@
         various investment option, and guide you for optimal investment plan.</p>
       <button class="button-dark hero-button" routerLink="../contact-us">Get Started</button>
     </div>
-
   </div>
 </div>
 
-<!--------------
-  Mutual Fund
---------------->
-<div class="partner">
+<!---------
+  Feature
+---------->
+<div class="feature-outer">
   <div container="true">
-    <div class="partner-title-container">
-      <h1 class="partner-title">All Mutual Funds</h1>
-      <p class="partner-subtitle">under one roof</p>
-    </div>
-    <ul class="partner-logo-container">
-      <li *ngFor="let mf of mutualFundList">
-        <img class="partner-logo" [ngStyle]="{'background-color': mf.getBgColor()}" loading="lazy" [src]="mf.getImage()"
-          [alt]="mf.getAltName()" />
+    <h2 class="feature-main-title">Why Fundline?</h2>
+    <ul class="feature-list">
+      <li class="card feature-card">
+        <div class="feature-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+            <defs />
+            <g fill="none" stroke="navy" stroke-linecap="round">
+              <path stroke-linejoin="round" stroke-width="2"
+                d="M41 35.7V15a4 4 0 014-4h40a4 4 0 014 4v50a4 4 0 01-4 4H64.68" opacity=".98" />
+              <circle cx="34.8" cy="65.2" r="23.8" stroke-linejoin="round" stroke-width="2" opacity=".98" />
+              <rect width="40" height="10" x="45" y="15" stroke-linejoin="round" stroke-width="2" opacity=".98" rx="4"
+                ry="4" />
+              <path stroke-width="4" d="M58.67 40h3M68.33 40h3M78 40h3M68.33 50h3M68.33 60h3M81 50v10" opacity=".98" />
+              <path stroke-width="2"
+                d="M44.92 60.77l-8.76 8.76M38.78 60.77a2.2 2.2 0 11-4.38 0 2.2 2.2 0 014.38 0zM46.67 69.53a2.2 2.2 0 11-4.38 0 2.2 2.2 0 014.38 0z"
+                opacity=".98" />
+              <ellipse cx="26.91" cy="65.2" stroke-linejoin="round" stroke-width="2" opacity=".98" rx="3.98"
+                ry="6.84" />
+            </g>
+          </svg>
+        </div>
+        <p class="feature-title">Zero transaction fee</p>
+      </li>
+      <li class="card feature-card">
+        <div class="feature-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+            <defs />
+            <g fill="none" stroke="navy" stroke-linecap="round" stroke-width="2">
+              <path
+                d="M80 15v30M75 20v25M70 25v20M65 30v15M60 35v10M41 59L31 69M34 59a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zM43 69a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zM90 75a15 15 0 11-30 0 15 15 0 0130 0z" />
+              <path
+                d="M75 86v-3m0-16v-3m0 11s0 0 0 0a4 4 0 014 4v0a4 4 0 11-8 0m4-4a4 4 0 114-4M20.38 31.36l7.35 7.34m4.78 4.79L39.02 50m45.63-5c.23 1.63.35 3.3.35 5v0c0 2.85-.34 5.62-.98 8.27M58.27 84.02a35 35 0 1110.97-63.26M15 50h70M50 15v70M16.71 39.18L27.53 50m-2.01-25l3.2 3.2m3.54 3.54l9.46 9.47m3.54 3.53L50 49.48m-18-29.5l8.97 8.98m3.54 3.53L50 38M39.97 16.47L50 26.49" />
+            </g>
+          </svg>
+        </div>
+        <p class="feature-title">Tailor made portfolio<br />Goal based investment</p>
+      </li>
+      <li class="card feature-card">
+        <div class="feature-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+            <defs />
+            <g stroke-linecap="round" stroke-linejoin="round">
+              <path fill="none" stroke="navy" stroke-width="1.95"
+                d="M50 10.98A39.02 39.02 0 0010.98 50a39.02 39.02 0 0012.25 28.32l7.08-7.07A29.02 29.02 0 0120.98 50 29.02 29.02 0 0150 20.98 29.02 29.02 0 0179.02 50a29.02 29.02 0 01-6.19 17.83L70 65l-2.38 8.9-2.39 8.9 8.9-2.4 8.9-2.37-3.11-3.11A39.02 39.02 0 0089.02 50 39.02 39.02 0 0050 10.98z" />
+              <text x="30.49" y="56.87" fill="navy" font-family="Metropolis" font-size="20" font-weight="700"
+                style="line-height:1.25;-inkscape-font-specification:'Metropolis, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">
+                <tspan x="30.49" y="56.87">ALL</tspan>
+              </text>
+            </g>
+          </svg>
+        </div>
+        <p class="feature-title">All mutual fund under one roof</p>
+      </li>
+      <li class="card feature-card">
+        <div class="feature-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+            <defs />
+            <path fill="none" stroke="navy" stroke-linecap="round" stroke-width="2"
+              d="M30 30.4V17M30 10v1M30 56v1M30 78.4V63" />
+            <path fill="none" stroke="navy" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M55 20V10H45h0v9.97M45 66.12V69h-6.87l5.78 10 5.77 10 5.77-10 5.78-10H55v-2.97" />
+            <circle cx="49.79" cy="43.05" r="20" fill="none" stroke="navy" stroke-linecap="round"
+              stroke-linejoin="round" stroke-width="2" />
+            <path fill="navy"
+              d="M40.2 47.8c2.2 0 3.65-1.25 3.65-3.2 0-1.86-1.41-2.9-3.02-2.9-.76 0-1.35.24-1.8.56l.06-2.03h4.26v-1.77h-6.08l-.13 4.95 1.31.53c.5-.37 1.1-.6 1.8-.6 1 0 1.63.53 1.63 1.33 0 .79-.63 1.4-1.65 1.4-.88 0-1.72-.42-2.41-1.08l-1.15 1.39c.85.85 2 1.41 3.53 1.41zM49.28 47.78c2.4 0 4.1-1.96 4.1-4.75 0-2.77-1.7-4.73-4.1-4.73-2.43 0-4.12 1.96-4.12 4.73 0 2.79 1.7 4.75 4.12 4.75zm0-1.79c-1.24 0-2.1-1.24-2.1-2.96s.86-2.94 2.1-2.94c1.22 0 2.08 1.22 2.08 2.94S50.5 46 49.28 46zM58.8 47.78c2.4 0 4.11-1.96 4.11-4.75 0-2.77-1.7-4.73-4.1-4.73-2.43 0-4.12 1.96-4.12 4.73 0 2.79 1.7 4.75 4.12 4.75zm0-1.79c-1.23 0-2.1-1.24-2.1-2.96s.87-2.94 2.1-2.94 2.09 1.22 2.09 2.94S60.03 46 58.8 46z"
+              font-family="Metropolis" font-size="13.33" font-weight="700"
+              style="line-height:1.25;-inkscape-font-specification:'Metropolis, Bold'" />
+            <circle cx="49.79" cy="43.05" r="16.15" fill="none" stroke="navy" stroke-linecap="round"
+              stroke-linejoin="round" stroke-width="2" />
+            <path fill="none" stroke="navy" stroke-linecap="round" stroke-width="2"
+              d="M70 30.4V17M70 10v1M70 56v1M70 78.4V63" />
+          </svg>
+        </div>
+        <p class="feature-title">Investment starts from Rs.&nbsp;500</p>
+      </li>
+      <li class="card feature-card">
+        <div class="feature-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+            <defs />
+            <path fill="none" stroke="navy" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M43.76 70h22m-22-15h22m-22-15h22m-31.5 30l1.67 1.5 3.33-3m-5-13.5l1.67 1.5 3.33-3m-5-13.5l1.67 1.5 3.33-3M35.01 21l13-9c1.73-1 2.27-1 4 0l13 9m-25 0h20M68 21h2.02a4 4 0 014 4v60a4 4 0 01-4 4H30a4 4 0 01-4-4V25a4 4 0 014-4v0h2" />
+          </svg>
+        </div>
+        <p class="feature-title">Financial planning<br />Retirement planning</p>
+      </li>
+      <li class="card feature-card">
+        <div class="feature-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+            <defs />
+            <path fill="none" stroke="navy" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M70 15h10v10M20 55l25-25 10 10 25-25m-9 69V41h8v43m-33 0V51h8v33m-33 0V61v0h8v23m-13 0h68" />
+          </svg>
+        </div>
+        <p class="feature-title">Superior risk adjusted return</p>
       </li>
     </ul>
   </div>
 </div>
 
-<!-----------
-  Insurance
------------->
-<div class="partner">
+<!---------
+  Partner
+---------->
+<div class="partner-outer">
   <div container="true">
-    <div class="partner-title-container">
-      <h1 class="partner-title">Insurance Partner</h1>
-      <p class="partner-subtitle"></p>
+    <!--------------
+      Mutual Fund
+    --------------->
+    <div class="partner">
+      <div class="partner-title-container">
+        <h2 class="partner-title">Mutual Funds Partner</h2>
+        <p class="partner-subtitle"></p>
+      </div>
+      <ul class="partner-logo-container">
+        <li *ngFor="let mf of mutualFundList">
+          <img class="card partner-logo" [ngStyle]="{'background-color': mf.getBgColor()}" loading="lazy"
+            [src]="mf.getImage()" [alt]="mf.getAltName()" />
+        </li>
+      </ul>
     </div>
-    <ul class="partner-logo-container">
-      <li *ngFor="let ins of insList">
-        <img class="partner-logo" [ngStyle]="{'background-color': ins.getBgColor()}" loading="lazy" [src]="ins.getImage()"
-          [alt]="ins.getAltName()" />
-      </li>
-    </ul>
-  </div>
-</div>
 
-<!------------------
-  Health Insurance
-------------------->
-<div class="partner">
-  <div container="true">
-    <div class="partner-title-container">
-      <h1 class="partner-title">Health Insurance Partner</h1>
-      <p class="partner-subtitle"></p>
+    <!-----------
+      Insurance
+    ------------>
+    <div class="partner">
+      <div class="partner-title-container">
+        <h2 class="partner-title">Insurance Partner</h2>
+      </div>
+      <ul class="partner-logo-container">
+        <li *ngFor="let ins of insList">
+          <img class="card partner-logo" [ngStyle]="{'background-color': ins.getBgColor()}" loading="lazy"
+            [src]="ins.getImage()" [alt]="ins.getAltName()" />
+        </li>
+      </ul>
     </div>
-    <ul class="partner-logo-container">
-      <li *ngFor="let hIns of hInsList">
-        <img class="partner-logo" [ngStyle]="{'background-color': hIns.getBgColor()}" loading="lazy" [src]="hIns.getImage()"
-          [alt]="hIns.getAltName()" />
-      </li>
-    </ul>
+
+    <!------------------
+      Health Insurance
+    ------------------->
+    <div class="partner">
+      <div class="partner-title-container">
+        <h2 class="partner-title">Health Insurance Partner</h2>
+      </div>
+      <ul class="partner-logo-container">
+        <li *ngFor="let hIns of hInsList">
+          <img class="card partner-logo" [ngStyle]="{'background-color': hIns.getBgColor()}" loading="lazy"
+            [src]="hIns.getImage()" [alt]="hIns.getAltName()" />
+        </li>
+      </ul>
+    </div>
   </div>
 </div>
-
-<!--
-<div class="feature">
-  <div container="true">
-    <h1 class="feature-title">Various Investment Option</h1>
-    <ul class="feature-card-container">
-      <li class="card feature-card"></li>
-      <li class="card feature-card"></li>
-      <li class="card feature-card"></li>
-      <li class="card feature-card"></li>
-    </ul>
-  </div>
-</div>
- -->
-
 <!--
 <p>welcome to Fundline, your financial partner.</p>
 
@@ -139,26 +226,6 @@
 </div>
 
 
-
-<!-------------
-    Partner
--------------->
-
-<!-- <div class="partner-container">
-  <div class="partner-banner">
-    <svg class="thumb-up">
-      <use href="#thumb-up"></use>
-    </svg>
-    <div class="partner-title-container">
-      <p class="partner-subtitle">We are partnered with</p>
-    </div>
-  </div>
-
-  <div class="partner-mutual-fund">Mutual Fund Partner</div>
-  <div class="partner-insurance">Insurance Partner</div>
-</div> -->
-
-
 <!------
   Cert
 ------->
@@ -178,7 +245,7 @@
 <!--contact/ call to action-->
 <div class="contact">
   <div container="true">
-    <h1>Start Financial Plannig?</h1>
+    <h1>Start Financial Planning?</h1>
     <button class="button-dark" routerLink="../contact-us">Contact Us</button>
   </div>
 </div>
