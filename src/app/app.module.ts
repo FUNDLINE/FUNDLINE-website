@@ -7,6 +7,7 @@ import { InsuranceComponent } from './insurance/insurance.component';
 import { MutualFundComponent } from './mutual-fund/mutual-fund.component';
 import { RouterModule } from '@angular/router';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { NPSComponent } from './nps/nps.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     HomeComponent,
     InsuranceComponent,
     MutualFundComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    NPSComponent
   ],
   imports: [
     BrowserModule,
@@ -34,6 +36,10 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
       {
         path: 'insurance',
         component: InsuranceComponent,
+      },
+      {
+        path: 'nps',
+        component: NPSComponent,
       },
       {
         path: '**',
