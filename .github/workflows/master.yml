@@ -67,6 +67,6 @@ jobs:
                     exit 0
                 else
                     git add --verbose --ignore-errors --all
-                    git commit --verbose -m "Automated Deploy"
+                    git commit --verbose -m "Automated Deploy - Github Actions Run-number : ${{ github.run_number }}"
                     git push https://G-Basak:$API_TOKEN@github.com/FUNDLINE/FUNDLINE.github.io.git refs/heads/master
                 fi
