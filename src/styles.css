@@ -191,6 +191,12 @@ p, li {
   font-family: 'Inter', sans-serif;
 }
 
+.strong {
+  color: var(--accent-900);
+  font-family: 'Metropolis', sans-serif;
+  font-weight: 700;
+}
+
 
 /***********************
   Global button styles

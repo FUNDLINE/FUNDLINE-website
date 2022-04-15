@@ -131,9 +131,9 @@
         <p class="partner-subtitle"></p>
       </div>
       <ul class="partner-logo-container">
-        <li *ngFor="let mf of mutualFundList">
-          <img class="card partner-logo" [ngStyle]="{'background-color': mf.getBgColor()}" loading="lazy"
-            [src]="mf.getImage()" [alt]="mf.getAltName()" />
+        <li *ngFor="let each of mutualFundList">
+          <img class="card partner-logo" [ngStyle]="{'background-color': each.getBgColor()}" loading="lazy"
+            [src]="each.getImage()" [alt]="each.getAltName()" />
         </li>
       </ul>
     </div>
@@ -146,9 +146,9 @@
         <h2 class="partner-title">Insurance Partner</h2>
       </div>
       <ul class="partner-logo-container">
-        <li *ngFor="let ins of insList">
-          <img class="card partner-logo" [ngStyle]="{'background-color': ins.getBgColor()}" loading="lazy"
-            [src]="ins.getImage()" [alt]="ins.getAltName()" />
+        <li *ngFor="let each of insList">
+          <img class="card partner-logo" [ngStyle]="{'background-color': each.getBgColor()}" loading="lazy"
+            [src]="each.getImage()" [alt]="each.getAltName()" />
         </li>
       </ul>
     </div>
@@ -161,9 +161,9 @@
         <h2 class="partner-title">Health Insurance Partner</h2>
       </div>
       <ul class="partner-logo-container">
-        <li *ngFor="let hIns of hInsList">
-          <img class="card partner-logo" [ngStyle]="{'background-color': hIns.getBgColor()}" loading="lazy"
-            [src]="hIns.getImage()" [alt]="hIns.getAltName()" />
+        <li *ngFor="let each of hInsList">
+          <img class="card partner-logo" [ngStyle]="{'background-color': each.getBgColor()}" loading="lazy"
+            [src]="each.getImage()" [alt]="each.getAltName()" />
         </li>
       </ul>
     </div>
@@ -176,9 +176,24 @@
         <h2 class="partner-title">NPS Partner</h2>
       </div>
       <ul class="partner-logo-container">
-        <li *ngFor="let nps of npsList">
-          <img class="card partner-logo" [ngStyle]="{'background-color': nps.getBgColor()}" loading="lazy"
-            [src]="nps.getImage()" [alt]="nps.getAltName()" />
+        <li *ngFor="let each of npsList">
+          <img class="card partner-logo" [ngStyle]="{'background-color': each.getBgColor()}" loading="lazy"
+            [src]="each.getImage()" [alt]="each.getAltName()" />
+        </li>
+      </ul>
+    </div>
+
+    <!------------------
+      P2P Partner
+    ------------------->
+    <div class="partner">
+      <div class="partner-title-container">
+        <h2 class="partner-title">P2P Partner</h2>
+      </div>
+      <ul class="partner-logo-container">
+        <li *ngFor="let each of p2pList">
+          <img class="card partner-logo" [ngStyle]="{'background-color': each.getBgColor()}" loading="lazy"
+            [src]="each.getImage()" [alt]="each.getAltName()" />
         </li>
       </ul>
     </div>
