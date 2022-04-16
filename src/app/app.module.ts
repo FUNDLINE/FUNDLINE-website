@@ -8,6 +8,7 @@ import { MutualFundComponent } from './mutual-fund/mutual-fund.component';
 import { RouterModule } from '@angular/router';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { NPSComponent } from './nps/nps.component';
+import { P2pComponent } from './p2p/p2p.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { NPSComponent } from './nps/nps.component';
     InsuranceComponent,
     MutualFundComponent,
     ContactUsComponent,
-    NPSComponent
+    NPSComponent,
+    P2pComponent
   ],
   imports: [
     BrowserModule,
@@ -40,6 +42,10 @@ import { NPSComponent } from './nps/nps.component';
       {
         path: 'nps',
         component: NPSComponent,
+      },
+      {
+        path: 'p2p',
+        component: P2pComponent,
       },
       {
         path: '**',

@@ -11,6 +11,7 @@ export class HomeComponent implements OnInit {
   readonly insList: Image[];
   readonly hInsList: Image[];
   readonly npsList: Image[];
+  readonly p2pList: Image[];
 
   constructor() {
 
@@ -53,17 +54,16 @@ export class HomeComponent implements OnInit {
 
       Image.createImage("", "", mfLogoLoaction+"Union-MF-Logo.jpg"),
       Image.createImage("", "", mfLogoLoaction+"boi-mf-logo.png"),
-      Image.createImage("", "", mfLogoLoaction+"bank_of_baroda_logo.png"),
+      Image.createImage("", "", mfLogoLoaction+"baroda-bnp-logo.jpg"),
 
       Image.createImage("", "", mfLogoLoaction+"quant-logo.png"),
       Image.createImageWithBgColor("", "", mfLogoLoaction+"quantum-logo.png", "#0f376a"),
       Image.createImage("", "", mfLogoLoaction+"principal-logo.png"),
 
-      Image.createImage("", "", mfLogoLoaction+"bnp-paribas-logo.jpg"),
       Image.createImage("", "", mfLogoLoaction+"iti-mf-logo.png"),
       Image.createImage("", "", mfLogoLoaction+"yes-mf-logo.png"),
-
       Image.createImage("", "", mfLogoLoaction+"navi-logo.svg"),
+
       Image.createImage("", "", mfLogoLoaction+"mahindra-mf-logo.jpg"),
       Image.createImage("", "", mfLogoLoaction+"trust-logo.png"),
       Image.createImage("", "", mfLogoLoaction+"samco-logo.png"),
@@ -84,6 +84,11 @@ export class HomeComponent implements OnInit {
     const npsLogoLoaction: string = "../../assets/home/nps-logo/";
     this.npsList = [
       Image.createImage("", "", npsLogoLoaction+"icici-prud-logo.png"),
+    ];
+
+    const p2pLogoLoaction: string = "../../assets/home/p2p-logo/";
+    this.p2pList = [
+      Image.createImageWithBgColor("", "", p2pLogoLoaction+"liquiloans-logo.png","#0b395b"),
     ];
   }
 

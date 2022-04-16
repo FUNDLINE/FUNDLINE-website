@@ -26,3 +26,7 @@
   letter-spacing: normal;
   text-align: justify;
 }
+
+.section-text-bold {
+  font-weight: 700;
+}
