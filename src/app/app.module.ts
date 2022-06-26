@@ -9,6 +9,7 @@ import { RouterModule } from '@angular/router';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { NPSComponent } from './nps/nps.component';
 import { P2pComponent } from './p2p/p2p.component';
+import { PMSComponent } from './pms/pms.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { P2pComponent } from './p2p/p2p.component';
     MutualFundComponent,
     ContactUsComponent,
     NPSComponent,
-    P2pComponent
+    P2pComponent,
+    PMSComponent
   ],
   imports: [
     BrowserModule,
@@ -46,6 +48,10 @@ import { P2pComponent } from './p2p/p2p.component';
       {
         path: 'p2p',
         component: P2pComponent,
+      },
+      {
+        path: 'pms',
+        component: PMSComponent,
       },
       {
         path: '**',
