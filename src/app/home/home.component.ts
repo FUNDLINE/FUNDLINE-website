@@ -12,6 +12,7 @@ export class HomeComponent implements OnInit {
   readonly hInsList: Image[];
   readonly npsList: Image[];
   readonly p2pList: Image[];
+  readonly pmsList: Image[];
 
   constructor() {
 
@@ -89,6 +90,11 @@ export class HomeComponent implements OnInit {
     const p2pLogoLoaction: string = "../../assets/home/p2p-logo/";
     this.p2pList = [
       Image.createImageWithBgColor("", "", p2pLogoLoaction+"liquiloans-logo.png","#0b395b"),
+    ];
+
+    const pmsLogoLoaction: string = "../../assets/home/pms-logo/";
+    this.pmsList = [
+      Image.createImage("", "", pmsLogoLoaction+"LFS-BROKING_Logo.png"),
     ];
   }
 

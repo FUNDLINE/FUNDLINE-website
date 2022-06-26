@@ -198,6 +198,21 @@
       </ul>
     </div>
 
+    <!------------------
+      PMS Partner
+    ------------------->
+    <div class="partner">
+      <div class="partner-title-container">
+        <h2 class="partner-title">PMS Partner</h2>
+      </div>
+      <ul class="partner-logo-container">
+        <li *ngFor="let each of pmsList">
+          <img class="card partner-logo" [ngStyle]="{'background-color': each.getBgColor()}" loading="lazy"
+            [src]="each.getImage()" [alt]="each.getAltName()" />
+        </li>
+      </ul>
+    </div>
+
   </div>
 </div>
 <!--
