@@ -26,6 +26,7 @@ jobs:
             - name: Setup Node.js environment
               uses:
                   actions/setup-node@v2.1.5
+              with: 16.14.2
 
             #Cache npm dependency
             - name: Cache node.js modules
