@@ -45,7 +45,7 @@ export class HomeComponent implements OnInit {
       Image.createImage("", "", mfLogoLoaction+"mirae-asset-mutual-fund-logo.jpg"),
       Image.createImage("", "", mfLogoLoaction+"invesco_mf_logo.jpg"),
 
-      Image.createImageWithBgColor("", "", mfLogoLoaction+"ltfs-logo.svg", "#ffcb05"),
+      Image.createImage("", "", mfLogoLoaction+"hsbc-logo.svg"),
       Image.createImage("", "", mfLogoLoaction+"LIC-Logo.png"),
       Image.createImageWithBgColor("", "", mfLogoLoaction+"edelweiss-logo.png", "#2857a4"),
 
