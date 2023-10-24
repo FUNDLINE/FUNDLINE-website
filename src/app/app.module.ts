@@ -9,7 +9,7 @@ import { RouterModule } from '@angular/router';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { NPSComponent } from './nps/nps.component';
 import { P2pComponent } from './p2p/p2p.component';
-import { PMSComponent } from './pms/pms.component';
+import { OtherServicesComponent } from './other-services/other-services.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +20,7 @@ import { PMSComponent } from './pms/pms.component';
     ContactUsComponent,
     NPSComponent,
     P2pComponent,
-    PMSComponent
+    OtherServicesComponent
   ],
   imports: [
     BrowserModule,
@@ -50,8 +50,8 @@ import { PMSComponent } from './pms/pms.component';
         component: P2pComponent,
       },
       {
-        path: 'pms',
-        component: PMSComponent,
+        path: 'other-services',
+        component: OtherServicesComponent
       },
       {
         path: '**',
