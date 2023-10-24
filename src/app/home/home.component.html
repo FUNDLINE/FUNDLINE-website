@@ -199,14 +199,14 @@
     </div>
 
     <!------------------
-      PMS Partner
+      Business Associate
     ------------------->
     <div class="partner">
       <div class="partner-title-container">
-        <h2 class="partner-title">PMS Partner</h2>
+        <h2 class="partner-title">Business Associate</h2>
       </div>
       <ul class="partner-logo-container">
-        <li *ngFor="let each of pmsList">
+        <li *ngFor="let each of businessAssociateList">
           <img class="card partner-logo" [ngStyle]="{'background-color': each.getBgColor()}" loading="lazy"
             [src]="each.getImage()" [alt]="each.getAltName()" />
         </li>
