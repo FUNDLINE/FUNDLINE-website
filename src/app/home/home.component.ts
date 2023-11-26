@@ -73,6 +73,7 @@ export class HomeComponent implements OnInit {
       Image.createImage("", "", mfLogoLoaction+"Bajaj_Asset_Management_Logo.png"),
       Image.createImage("", "", mfLogoLoaction+"360_ONE_Asset_logo.svg"),
       Image.createImage("", "", mfLogoLoaction+"groww-mutual-fund-logo.svg"),
+      Image.createImage("", "", mfLogoLoaction+"Helios-Mutual-fund-Logo.png"),
     ];
 
     const insLogoLoaction: string = "../../assets/home/ins-logo/";
