@@ -13,6 +13,7 @@ export class HomeComponent implements OnInit {
   readonly npsList: Image[];
   readonly p2pList: Image[];
   readonly pmsList: Image[];
+  readonly businessAssociateList: Image[];
 
   constructor() {
 
@@ -68,13 +69,21 @@ export class HomeComponent implements OnInit {
       Image.createImage("", "", mfLogoLoaction+"mahindra-mf-logo.jpg"),
       Image.createImage("", "", mfLogoLoaction+"trust-logo.png"),
       Image.createImage("", "", mfLogoLoaction+"samco-logo.png"),
-      Image.createImage("", "", mfLogoLoaction+"SundaramMutual-Logo.png")
+      Image.createImage("", "", mfLogoLoaction+"SundaramMutual-Logo.png"),
+      Image.createImage("", "", mfLogoLoaction+"Bajaj_Asset_Management_Logo.png"),
+      Image.createImage("", "", mfLogoLoaction+"360_ONE_Asset_logo.svg"),
+      Image.createImage("", "", mfLogoLoaction+"groww-mutual-fund-logo.svg"),
+      Image.createImage("", "", mfLogoLoaction+"Helios-Mutual-fund-Logo.png"),
     ];
 
     const insLogoLoaction: string = "../../assets/home/ins-logo/";
 
     this.insList = [
       Image.createImageWithBgColor("", "", insLogoLoaction+"bajaj-logo.png", "#0071bb"),
+      Image.createImage("", "", insLogoLoaction+"icici-prudential-life-insurance-logo.png"),
+      Image.createImage("", "", insLogoLoaction+"HDFC_life_insurance_logo.svg"),
+      Image.createImage("", "", insLogoLoaction+"tata-aia-life-insurance-logo.png"),
+      Image.createImage("", "", insLogoLoaction+"edelweiss-tokio-life-insurance-logo.webp"),
     ]
 
     const hInsLogoLoaction: string = "../../assets/home/health-ins-logo/";
@@ -95,6 +104,11 @@ export class HomeComponent implements OnInit {
     const pmsLogoLoaction: string = "../../assets/home/pms-logo/";
     this.pmsList = [
       Image.createImage("", "", pmsLogoLoaction+"LFS-BROKING_Logo.png"),
+    ];
+
+    const businessAssociateLoaction: string = "../../assets/home/business-associate-logo/";
+    this.businessAssociateList = [
+      Image.createImageWithBgColor("", "", businessAssociateLoaction+"motilal-logo.jpeg", "#feae17"),
     ];
   }
 
