@@ -99,6 +99,7 @@ export class HomeComponent implements OnInit {
     const p2pLogoLoaction: string = "../../assets/home/p2p-logo/";
     this.p2pList = [
       Image.createImageWithBgColor("", "", p2pLogoLoaction+"liquiloans-logo.png","#0b395b"),
+      Image.createImageWithBgColor("", "", p2pLogoLoaction+"per-annum-logo.svg","#ffffff"),
     ];
 
     const pmsLogoLoaction: string = "../../assets/home/pms-logo/";
