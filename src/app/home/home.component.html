@@ -128,14 +128,18 @@
     <div class="partner">
       <div class="partner-title-container">
         <h2 class="partner-title">Mutual Funds Partner</h2>
-        <p class="partner-subtitle"></p>
       </div>
-      <ul class="partner-logo-container">
-        <li *ngFor="let each of mutualFundList">
-          <img class="card partner-logo" [ngStyle]="{'background-color': each.getBgColor()}" loading="lazy"
-            [src]="each.getImage()" [alt]="each.getAltName()" />
-        </li>
-      </ul>
+      <div>
+        <ul class="partner-logo-container">
+          <li *ngFor="let each of mutualFundList">
+            <img class="card partner-logo" [ngStyle]="{'background-color': each.getBgColor()}" loading="lazy"
+              [src]="each.getImage()" [alt]="each.getAltName()" />
+          </li>
+        </ul>
+        <div class="partner-footer">
+          <p>All Specialized Investment Fund (SIF) are available with us</p>
+        </div>
+      </div>
     </div>
 
     <!-----------
