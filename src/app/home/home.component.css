@@ -268,7 +268,7 @@
   }
 
   .cert-card {
-    width: 10rem;
+    width: 13rem;
     height: 15rem;
     margin: 1rem auto;
     text-align: center;
@@ -281,7 +281,7 @@
     object-fit: contain;
   }
 
-  .cert-card>p {
+  .cert-card-text {
     padding: 2rem 0 0 0;
     font-size: 0.75rem;
     color: var(--accent-900);

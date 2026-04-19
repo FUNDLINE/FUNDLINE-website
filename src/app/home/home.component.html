@@ -282,7 +282,7 @@
     <ul class="cert-card-container">
       <li class="card cert-card" *ngFor="let cert of certList">
         <img loading="lazy" [src]="cert.getImage()" [alt]="cert.getAltName()" />
-        <p>{{cert.getName()}}</p>
+        <div class="cert-card-text" [innerHTML]="cert.getName()"></div>
       </li>
     </ul>
   </div>
