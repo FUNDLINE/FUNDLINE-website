@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit {
 
     this.certList = [
       Image.createImage("Insurance Regulatory and Development Authority", "IRDA", "../../assets/home/irda_logo.png"),
-      Image.createImage("Assosiation of Mutual Fund in India<br>ARN: 171447<br>ARN Name : AYANESH TALUKDER", "AMFI", "../../assets/home/amfi_logo.png")
+      Image.createImage("Assosiation of Mutual Fund in India<br>ARN: 171447<br>ARN Name : AYANESH TALUKDERz", "AMFI", "../../assets/home/amfi_logo.png")
     ];
 
     const mfLogoLoaction: string = "../../assets/home/mutual-fund-logo/";
@@ -59,11 +59,9 @@ export class HomeComponent implements OnInit {
       Image.createImage("", "", mfLogoLoaction+"baroda-bnp-logo.jpg"),
 
       Image.createImage("", "", mfLogoLoaction+"quant-logo.png"),
-      Image.createImageWithBgColor("", "", mfLogoLoaction+"quantum-logo.png", "#0f376a"),
       Image.createImage("", "", mfLogoLoaction+"principal-logo.png"),
 
       Image.createImage("", "", mfLogoLoaction+"iti-mf-logo.png"),
-      Image.createImage("", "", mfLogoLoaction+"yes-mf-logo.png"),
       Image.createImage("", "", mfLogoLoaction+"navi-logo.svg"),
 
       Image.createImage("", "", mfLogoLoaction+"mahindra-mf-logo.jpg"),
