@@ -72,6 +72,9 @@ export class HomeComponent implements OnInit {
       Image.createImage("", "", mfLogoLoaction+"360_ONE_Asset_logo.svg"),
       Image.createImage("", "", mfLogoLoaction+"groww-mutual-fund-logo.svg"),
       Image.createImage("", "", mfLogoLoaction+"Helios-Mutual-fund-Logo.png"),
+
+      Image.createImage("", "", mfLogoLoaction+"the-wealth-company-mf-logo.svg"),
+      Image.createImage("", "", mfLogoLoaction+"abakkus-logo.svg"),
     ];
 
     const insLogoLoaction: string = "../../assets/home/ins-logo/";
@@ -87,6 +90,7 @@ export class HomeComponent implements OnInit {
     const hInsLogoLoaction: string = "../../assets/home/health-ins-logo/";
     this.hInsList = [
       Image.createImage("", "", hInsLogoLoaction+"start-health-ins-logo.png"),
+      Image.createImage("", "", hInsLogoLoaction+"galaxy-health-ins-logo.webp"),
     ];
 
     const npsLogoLoaction: string = "../../assets/home/nps-logo/";
