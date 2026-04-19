@@ -128,14 +128,18 @@
     <div class="partner">
       <div class="partner-title-container">
         <h2 class="partner-title">Mutual Funds Partner</h2>
-        <p class="partner-subtitle"></p>
       </div>
-      <ul class="partner-logo-container">
-        <li *ngFor="let each of mutualFundList">
-          <img class="card partner-logo" [ngStyle]="{'background-color': each.getBgColor()}" loading="lazy"
-            [src]="each.getImage()" [alt]="each.getAltName()" />
-        </li>
-      </ul>
+      <div>
+        <ul class="partner-logo-container">
+          <li *ngFor="let each of mutualFundList">
+            <img class="card partner-logo" [ngStyle]="{'background-color': each.getBgColor()}" loading="lazy"
+              [src]="each.getImage()" [alt]="each.getAltName()" />
+          </li>
+        </ul>
+        <div class="partner-footer">
+          <p>All Specialized Investment Fund (SIF) are available with us</p>
+        </div>
+      </div>
     </div>
 
     <!-----------
@@ -213,6 +217,21 @@
       </ul>
     </div>
 
+    <!------------------
+      Invoice discounting investment partner
+    ------------------->
+    <div class="partner">
+      <div class="partner-title-container">
+        <h2 class="partner-title">Invoice Discounting Investment Partner</h2>
+      </div>
+      <ul class="partner-logo-container">
+        <li *ngFor="let each of invDiscountList">
+          <img class="card partner-logo" [ngStyle]="{'background-color': each.getBgColor()}" loading="lazy"
+            [src]="each.getImage()" [alt]="each.getAltName()" />
+        </li>
+      </ul>
+    </div>
+
   </div>
 </div>
 <!--
@@ -282,7 +301,7 @@
     <ul class="cert-card-container">
       <li class="card cert-card" *ngFor="let cert of certList">
         <img loading="lazy" [src]="cert.getImage()" [alt]="cert.getAltName()" />
-        <p>{{cert.getName()}}</p>
+        <div class="cert-card-text" [innerHTML]="cert.getName()"></div>
       </li>
     </ul>
   </div>
@@ -293,6 +312,13 @@
   <div container="true">
     <h1>Start Financial Planning?</h1>
     <button class="button-dark" routerLink="../contact-us">Contact Us</button>
+  </div>
+</div>
+
+<!--Footer-->
+<div class="footer">
+  <div container="true">
+    <p>Mutual fund investments are subject to market risks. Please read all scheme-related documents carefully before investing.</p>
   </div>
 </div>
 

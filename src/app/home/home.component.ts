@@ -14,12 +14,13 @@ export class HomeComponent implements OnInit {
   readonly p2pList: Image[];
   readonly pmsList: Image[];
   readonly businessAssociateList: Image[];
+  readonly invDiscountList: Image[];
 
   constructor() {
 
     this.certList = [
       Image.createImage("Insurance Regulatory and Development Authority", "IRDA", "../../assets/home/irda_logo.png"),
-      Image.createImage("Assosiation of Mutual Fund in India", "AMFI", "../../assets/home/amfi_logo.png")
+      Image.createImage("Assosiation of Mutual Fund in India<br>ARN: 171447<br>ARN Name : AYANESH TALUKDERz", "AMFI", "../../assets/home/amfi_logo.png")
     ];
 
     const mfLogoLoaction: string = "../../assets/home/mutual-fund-logo/";
@@ -59,11 +60,9 @@ export class HomeComponent implements OnInit {
       Image.createImage("", "", mfLogoLoaction+"baroda-bnp-logo.jpg"),
 
       Image.createImage("", "", mfLogoLoaction+"quant-logo.png"),
-      Image.createImageWithBgColor("", "", mfLogoLoaction+"quantum-logo.png", "#0f376a"),
       Image.createImage("", "", mfLogoLoaction+"principal-logo.png"),
 
       Image.createImage("", "", mfLogoLoaction+"iti-mf-logo.png"),
-      Image.createImage("", "", mfLogoLoaction+"yes-mf-logo.png"),
       Image.createImage("", "", mfLogoLoaction+"navi-logo.svg"),
 
       Image.createImage("", "", mfLogoLoaction+"mahindra-mf-logo.jpg"),
@@ -74,6 +73,9 @@ export class HomeComponent implements OnInit {
       Image.createImage("", "", mfLogoLoaction+"360_ONE_Asset_logo.svg"),
       Image.createImage("", "", mfLogoLoaction+"groww-mutual-fund-logo.svg"),
       Image.createImage("", "", mfLogoLoaction+"Helios-Mutual-fund-Logo.png"),
+
+      Image.createImage("", "", mfLogoLoaction+"the-wealth-company-mf-logo.svg"),
+      Image.createImage("", "", mfLogoLoaction+"abakkus-logo.svg"),
     ];
 
     const insLogoLoaction: string = "../../assets/home/ins-logo/";
@@ -89,6 +91,7 @@ export class HomeComponent implements OnInit {
     const hInsLogoLoaction: string = "../../assets/home/health-ins-logo/";
     this.hInsList = [
       Image.createImage("", "", hInsLogoLoaction+"start-health-ins-logo.png"),
+      Image.createImage("", "", hInsLogoLoaction+"galaxy-health-ins-logo.webp"),
     ];
 
     const npsLogoLoaction: string = "../../assets/home/nps-logo/";
@@ -111,16 +114,18 @@ export class HomeComponent implements OnInit {
     this.businessAssociateList = [
       Image.createImageWithBgColor("", "", businessAssociateLoaction+"motilal-logo.jpeg", "#feae17"),
     ];
+
+    const invDiscountLoaction: string = "../../assets/home/inv-discount-logo/";
+    this.invDiscountList = [
+      Image.createImage("", "", invDiscountLoaction+"amplio-logo.png"),
+    ];
   }
 
   ngOnInit(): void {
   }
-
 }
 
 class Image {
-
-
   static createImage(name:string, altName:string, image:string) : Image {
       return new Image(name, altName, image, "transparent");
   }
