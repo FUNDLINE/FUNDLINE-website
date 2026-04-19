@@ -14,6 +14,7 @@ export class HomeComponent implements OnInit {
   readonly p2pList: Image[];
   readonly pmsList: Image[];
   readonly businessAssociateList: Image[];
+  readonly invDiscountList: Image[];
 
   constructor() {
 
@@ -112,6 +113,11 @@ export class HomeComponent implements OnInit {
     const businessAssociateLoaction: string = "../../assets/home/business-associate-logo/";
     this.businessAssociateList = [
       Image.createImageWithBgColor("", "", businessAssociateLoaction+"motilal-logo.jpeg", "#feae17"),
+    ];
+
+    const invDiscountLoaction: string = "../../assets/home/inv-discount-logo/";
+    this.invDiscountList = [
+      Image.createImage("", "", invDiscountLoaction+"amplio-logo.png"),
     ];
   }
 
