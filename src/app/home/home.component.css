@@ -318,6 +318,10 @@
     color: var(--accent-900);
   }
 
+  .cert-footer {
+    text-align: center;
+  }
+
 
 /*************************
   Contact/ Call to action
