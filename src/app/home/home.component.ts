@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit {
 
     this.certList = [
       Image.createImage("Insurance Regulatory and Development Authority", "IRDA", "../../assets/home/irda_logo.png"),
-      Image.createImage("Assosiation of Mutual Fund in India<br>ARN: 171447<br>ARN Name : AYANESH TALUKDERz", "AMFI", "../../assets/home/amfi_logo.png")
+      Image.createImage("Assosiation of Mutual Fund in India<br>ARN: 171447<br>ARN Name : AYANESH TALUKDER", "AMFI", "../../assets/home/amfi_logo.png")
     ];
 
     const mfLogoLoaction: string = "../../assets/home/mutual-fund-logo/";
